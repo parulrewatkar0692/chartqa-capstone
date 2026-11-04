@@ -1,0 +1,125 @@
+{
+  "seed": 42,
+  "domain_filter": "prefer",
+  "splits": {
+    "train": {
+      "raw_human_pairs": 7398,
+      "excluded": {
+        "colour_reference_unresolvable_without_annotations": 1221,
+        "asks_about_chart_appearance": 373,
+        "numeric_lookup_not_in_table": 331,
+        "text_answer_not_in_table": 61,
+        "table_unparseable_or_lt2_cells": 24,
+        "identical_table_in_eval_split": 18,
+        "duplicate": 1
+      },
+      "excluded_total": 2029,
+      "answerable_pool": 5369,
+      "answerable_pool_domain_match": 2046,
+      "final_total": 1450,
+      "final_answerable": 1378,
+      "final_unanswerable": 72,
+      "final_charts": 1068,
+      "final_by_source": {
+        "statista": 1013,
+        "owid": 217,
+        "pew": 163,
+        "oecd": 57
+      },
+      "final_by_answer_type": {
+        "number": 1017,
+        "text": 278,
+        "yes_no": 83,
+        "unanswerable": 72
+      },
+      "final_by_question_type": {
+        "arithmetic_comparison": 795,
+        "retrieval": 317,
+        "visual_reference": 266,
+        "unanswerable": 72
+      },
+      "final_domain_match": 1378,
+      "final_numeric_with_unit": 340
+    },
+    "val": {
+      "raw_human_pairs": 960,
+      "excluded": {
+        "colour_reference_unresolvable_without_annotations": 136,
+        "asks_about_chart_appearance": 44,
+        "numeric_lookup_not_in_table": 36,
+        "table_unparseable_or_lt2_cells": 8,
+        "text_answer_not_in_table": 5,
+        "identical_table_in_eval_split": 2
+      },
+      "excluded_total": 231,
+      "answerable_pool": 729,
+      "answerable_pool_domain_match": 299,
+      "final_total": 170,
+      "final_answerable": 162,
+      "final_unanswerable": 8,
+      "final_charts": 130,
+      "final_by_source": {
+        "statista": 105,
+        "owid": 40,
+        "pew": 13,
+        "oecd": 12
+      },
+      "final_by_answer_type": {
+        "number": 116,
+        "text": 38,
+        "yes_no": 8,
+        "unanswerable": 8
+      },
+      "final_by_question_type": {
+        "arithmetic_comparison": 91,
+        "retrieval": 36,
+        "visual_reference": 35,
+        "unanswerable": 8
+      },
+      "final_domain_match": 162,
+      "final_numeric_with_unit": 43
+    },
+    "test": {
+      "raw_human_pairs": 1250,
+      "excluded": {
+        "colour_reference_unresolvable_without_annotations": 190,
+        "asks_about_chart_appearance": 52,
+        "numeric_lookup_not_in_table": 31,
+        "table_unparseable_or_lt2_cells": 8,
+        "text_answer_not_in_table": 6
+      },
+      "excluded_total": 287,
+      "answerable_pool": 963,
+      "answerable_pool_domain_match": 391,
+      "final_total": 180,
+      "final_answerable": 171,
+      "final_unanswerable": 9,
+      "final_charts": 143,
+      "final_by_source": {
+        "statista": 116,
+        "owid": 44,
+        "pew": 11,
+        "oecd": 9
+      },
+      "final_by_answer_type": {
+        "number": 123,
+        "text": 35,
+        "yes_no": 13,
+        "unanswerable": 9
+      },
+      "final_by_question_type": {
+        "arithmetic_comparison": 99,
+        "retrieval": 42,
+        "visual_reference": 30,
+        "unanswerable": 9
+      },
+      "final_domain_match": 171,
+      "final_numeric_with_unit": 62
+    }
+  },
+  "chart_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}
