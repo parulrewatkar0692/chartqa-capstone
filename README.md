@@ -9,6 +9,7 @@ IIITK Exec PG GenAI capstone project: QLoRA fine-tuning of a ≤8B instruction m
 - `dataset/v1.0/`: fine-tuning-ready splits (`train.jsonl` 1,449, `val.jsonl` 170, `test.jsonl` 180 held out) with teacher-verified evidence and rationales; `answer_only/` for the no-rationale ablation
 - `dataset/build_dataset.py`: selects and linearises the items; `dataset/add_teacher_labels.py`: merges the Claude Opus teacher labels (`dataset/teacher/`) and replaces rejected items
 - `dataset/audit/audit_sheet.csv`: 150-item manual audit sample (step 9, pending)
+- `notebooks/01_baselines.ipynb`: Colab notebook that runs a base model (Qwen2.5-7B / Llama-3.1-8B / Mistral-7B Instruct, 4-bit) zero- and few-shot on the test split and scores it
 - `dataset/v0.9/`: earlier splits without colours, kept for reference (`build_dataset_v0.9.py` rebuilds them)
 
 The raw ChartQA archive (Hugging Face `ahmed-masry/ChartQA`, about 875 MB) is not committed; see `dataset/README.md` for the download command.
