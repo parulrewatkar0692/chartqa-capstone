@@ -1,0 +1,38 @@
+{"stratum": ["oecd", "line", "number", "visual_reference"], "rank": 0, "id": "val-OECD_NET_CHILDCARE_COSTS_CAN_000005-449"}
+{"stratum": ["oecd", "line", "number", "visual_reference"], "rank": 1, "id": "val-OECD_PENSION_FUNDS'_ASSETS_BEL_POL_000013-450"}
+{"stratum": ["oecd", "line", "number", "visual_reference"], "rank": 2, "id": "val-OECD_ENTERPRISES_BY_BUSINESS_SIZE_BEL_BGR_CZE_NOR_SWE_000003-431"}
+{"stratum": ["owid", "h_bar", "number", "arithmetic_comparison"], "rank": 0, "id": "val-15143133009400-81"}
+{"stratum": ["owid", "h_bar", "number", "arithmetic_comparison"], "rank": 1, "id": "val-20822516005121-91"}
+{"stratum": ["owid", "h_bar", "number", "arithmetic_comparison"], "rank": 2, "id": "val-12442699004228-75"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 0, "id": "val-36217687004306-205"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 1, "id": "val-22081073006998-190"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 2, "id": "val-36217687004306-204"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 3, "id": "val-20279636023514-186"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 4, "id": "val-00006834003066-163"}
+{"stratum": ["owid", "line", "number", "arithmetic_comparison"], "rank": 5, "id": "val-24779936003610-197"}
+{"stratum": ["owid", "line", "number", "visual_reference"], "rank": 0, "id": "val-70101677022779-235"}
+{"stratum": ["owid", "line", "number", "visual_reference"], "rank": 1, "id": "val-02348983021349-166"}
+{"stratum": ["owid", "line", "number", "visual_reference"], "rank": 2, "id": "val-24779936003610-196"}
+{"stratum": ["pew", "h_bar", "number", "arithmetic_comparison"], "rank": 0, "id": "val-8342-345"}
+{"stratum": ["pew", "h_bar", "number", "arithmetic_comparison"], "rank": 1, "id": "val-2595-285"}
+{"stratum": ["pew", "h_bar", "number", "arithmetic_comparison"], "rank": 2, "id": "val-1261-261"}
+{"stratum": ["pew", "h_bar", "number", "arithmetic_comparison"], "rank": 3, "id": "val-8126-39"}
+{"stratum": ["pew", "h_bar", "number", "arithmetic_comparison"], "rank": 4, "id": "val-7927-35"}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 0, "id": "val-17081-17"}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 1, "id": "val-16723-13"}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 2, "id": "val-5090-309"}
+{"stratum": ["statista", "h_bar", "text", "visual_reference"], "rank": 0, "id": "val-two_col_83479-510"}
+{"stratum": ["statista", "h_bar", "text", "visual_reference"], "rank": 1, "id": "val-two_col_100197-514"}
+{"stratum": ["statista", "h_bar", "text", "visual_reference"], "rank": 2, "id": "val-two_col_42904-676"}
+{"stratum": ["statista", "line", "number", "retrieval"], "rank": 0, "id": "val-multi_col_80582-940"}
+{"stratum": ["statista", "line", "number", "retrieval"], "rank": 1, "id": "val-two_col_3574-577"}
+{"stratum": ["statista", "line", "number", "retrieval"], "rank": 2, "id": "val-multi_col_60574-883"}
+{"stratum": ["statista", "v_bar", "number", "retrieval"], "rank": 0, "id": "val-two_col_5618-600"}
+{"stratum": ["statista", "v_bar", "number", "retrieval"], "rank": 1, "id": "val-multi_col_73-955"}
+{"stratum": ["statista", "v_bar", "number", "retrieval"], "rank": 2, "id": "val-multi_col_60860-902"}
+{"stratum": ["oecd", "v_bar", "number", "arithmetic_comparison"], "rank": 0, "id": "val-OECD_SHORT-TERM_INTEREST_RATES_BEL_CZE_IRL_KOR_RUS_000026-399", "round": 2}
+{"stratum": ["oecd", "v_bar", "number", "arithmetic_comparison"], "rank": 1, "id": "val-OECD_PRIVATE_SPENDING_ON_EDUCATION_ARG_RUS_000004-391", "round": 2}
+{"stratum": ["oecd", "v_bar", "number", "arithmetic_comparison"], "rank": 2, "id": "val-OECD_LONG-TERM_INTEREST_RATES_AUS_AUT_LTU_NOR_USA_000021-383", "round": 2}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 0, "id": "val-10219-401", "round": 2}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 1, "id": "val-10578-407", "round": 2}
+{"stratum": ["pew", "line", "number", "arithmetic_comparison"], "rank": 2, "id": "val-1914-274", "round": 2}

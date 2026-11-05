@@ -1,137 +1,94 @@
-# ChartAudit working dataset v1.0
+# ChartAudit dataset v1.0 (fine-tuning ready)
 
-Built 4 Nov 2026 by `build_dataset.py` (seed 42, standard-library Python, deterministic: two runs give byte-identical files) from **`ChartQA Dataset.zip` on Hugging Face** (`ahmed-masry/ChartQA`, revision `af8b6f5`, zip SHA-256 `1bf310e5…c3c160`). Follows steps 1–8 of `../Week1_TrackA_ChartQA_Deliverable.md`.
+`v1.0/train.jsonl` and `v1.0/val.jsonl` are ready for supervised fine-tuning. Every answerable item has a target with **evidence** (table cells, colours or title) and a short **rationale**, written by Claude Opus as teacher and checked by a script. `v1.0/test.jsonl` is the frozen held-out set; it is scored on the answer only.
 
-v1.0 replaces v0.9. The difference is that v1.0 uses the ChartQA **annotation JSON** (chart type, title, series and mark colours), which v0.9 could not download. The `*_human.json` question files are byte-identical to the ones v0.9 used (same SHA-256), so the question pool is the same and only what the model sees and what gets excluded has changed.
+| File | Items | What it is |
+|---|---:|---|
+| `v1.0/train.jsonl` | 1,449 (1,377 teacher-verified + 72 unanswerable) | Main SFT training set |
+| `v1.0/val.jsonl` | 170 (162 + 8) | Validation / model selection |
+| `v1.0/test.jsonl` | 180 (171 + 9) | **Held out. Never train or tune on it** |
+| `v1.0/answer_only/` | same items | Same splits with `evidence: []` and `rationale: null`: the Week 2 "no rationales" ablation |
+| `v1.0/teacher_stats.json` | | Teacher acceptance, rejections and final mix |
+| `v1.0/MANIFEST.txt` | | SHA-256 of every final file |
+| `v1.0/selection/` | | Answer-only output of `build_dataset.py` (the sample before teacher labelling), its `stats.json` and source checksums |
+| `teacher/` | | Teacher prompt, checker, every batch sent and every output returned, `rejected.jsonl` |
+| `audit/audit_sheet.csv` | 150 | Manual audit sample for step 9 (to be filled in by two reviewers) |
+| `DATA_CARD.md` | | Sources, licence, filters, counts, known biases |
 
-| File | Contents |
-|---|---|
-| `v1.0/train.jsonl` | 1,450 items (1,378 answerable + 72 unanswerable), 1,143 charts |
-| `v1.0/val.jsonl` | 170 items (162 + 8), 144 charts |
-| `v1.0/test.jsonl` | 180 items (171 + 9), 157 charts. **Held out; never train or tune on it** |
-| `v1.0/stats.json` | Every count below, plus breakdowns |
-| `v1.0/MANIFEST.txt` | SHA-256 of the source QA files, the tables and annotations folders, and each output split |
-| `v0.9/` | Previous build, kept for reference (`README_v0.9.md`, built by `build_dataset_v0.9.py`) |
+Chart overlap between splits is 0. Train is 1,449 rather than 1,450 because one Pew line-chart stratum ran out of items the teacher could verify.
 
-Human-written (ChartQA-H) questions only. Chart overlap between splits: **0** (checked on chart ids; identical-table leakage removed as in v0.9: 18 train and 2 val items).
+## One training record
 
-## Rebuild
+`messages` is ready for a chat template (system / user / assistant). The system prompt is general:
 
-```bash
-curl -L -o cq.zip "https://huggingface.co/datasets/ahmed-masry/ChartQA/resolve/af8b6f5c08c95085271561c2a3f9d15f2b5a9031/ChartQA%20Dataset.zip"
-unzip -q cq.zip -x '*.png'      # the PNGs are not needed
-python3 build_dataset.py --chartqa "ChartQA Dataset" --out v1.0
 ```
-Each split folder needs `*_human.json`, `tables/` and `annotations/`. Options: `--seed`, `--domain-filter off|prefer|strict` (default `prefer`).
+You are a chart analyst. Answer questions about the chart data provided.
+Return ONLY valid JSON matching the schema. If the data cannot answer the question,
+set "answer" to null and explain in "rationale".
+```
 
-## What one record looks like
-
-Each line has `messages` (system / user / assistant) ready for an SFT chat template, plus metadata: `id`, `version`, `chart_id`, `source` (statista / pew / owid / oecd), `chart_type` (v_bar / h_bar / line / pie), `question`, `gold_answer_raw`, `answer`, `answer_norm`, `answer_type` (number / text / yes_no / unanswerable), `question_type` (retrieval / arithmetic_comparison / visual_reference / unanswerable), `domain_tags`, `flags`, `target_status`, `input_text`.
-
-The user turn is the linearised chart plus the question. New in v1.0: `Chart type`, `Title` (Pew, OWID and OECD charts; Statista annotations have no title) and a colour for every series, or for every bar or slice when they differ:
+User turn (chart serialised as text, then the question):
 
 ```
 Chart data:
 Source: Statista
 Chart type: vertical bar, 2 series
 Category axis: Characteristic
-Series: Female (colour: blue) | Male (colour: dark blue)
+Series: Minimum price (colour: blue) | Maximum price (colour: dark blue)
 Table:
-| Characteristic | Female | Male |
+| Characteristic | Minimum price | Maximum price |
+|---|---|---|
+| Cannabis (resin) | 5.35 | 13 |
+| Cocaine | 40.0 | 133 |
 ...
-Question: Does women have the higher value in all categories?
+Question: What is the value of the highest dark blue bar?
 ```
 
-```
-Chart data:
-Source: OWID
-Chart type: horizontal bar
-Title: Revenue from income taxes in Europe, 1967
-Category axis: Country
-Series: Revenue from income taxes in Europe, 1967
-Bar colours: Switzerland = dark teal; Norway = red; Denmark = purple; Austria = dark blue
-Table:
-...
-```
-
-Colours are named, not given as hex. Statista, OWID and OECD annotations store hex codes, which the script maps to a plain name (hue family plus "light"/"dark"); Pew annotations already store names such as "light brown", which are kept after fixing typos. Pew charts whose annotator wrote `UNK` show no colour.
-
-The assistant turn follows the deliverable's JSON schema:
+Assistant turn:
 
 ```json
-{"answer": "No", "answer_type": "yes_no", "unit": null, "evidence": [], "rationale": null}
+{"answer": 133, "answer_type": "number", "unit": null,
+ "evidence": ["Colour: Maximum price = dark blue", "Col=Maximum price (all rows)"],
+ "rationale": "Dark blue is Maximum price; its highest value is 133 (Cocaine and Heroin)."}
 ```
 
-**`evidence` and `rationale` are empty on purpose** (`target_status: answer_only_pending_teacher_rationale`). Step 7 (teacher rationales, kept only if they reproduce the gold answer) fills them in. The answer-only version is also the Week 2 "no rationales" ablation set, so keep a copy.
+Unanswerable items (a question paired with the wrong chart) have `answer: null`, `evidence: []` and a fixed refusal rationale. Metadata fields: `id`, `version`, `split`, `chart_id`, `source`, `chart_type`, `question`, `gold_answer_raw`, `answer`, `answer_norm`, `answer_type`, `question_type`, `domain_tags`, `flags`, `target_status` (`teacher_verified` / `fixed_refusal`), `input_text`, and `replaces` on items that took a rejected item's place.
 
-`unit` is a heuristic read from the value-column header. It is set on 248 / 31 / 45 numeric items (train / val / test) and null otherwise. Spot-check it during the audit.
+Longest record is about 2,400 characters (roughly 700 tokens), so `max_seq_length = 1024` is enough.
 
-## How colour questions are handled
+## How it was built
 
-A colour question is kept when every colour it names (e.g. "the navy blue bar", "light blue", "red line") points to **exactly one** colour in that chart. Matching tries the colour's own family first ("blue" → blue), then close neighbours a reader might use (a red-orange OWID line called "red"), and uses "light"/"dark" to choose between two shades of the same hue. It is excluded when the colour isn't in the chart, when two colours fit equally well, or when the annotation has no colour for it.
+1. **Selection** (`build_dataset.py`): ChartQA human-written questions only, official splits, linearised with the annotation JSON (chart type, title, series and bar/slice colours), questions the text can't answer removed, domain filter, stratified over source × chart type × answer type × question type, ~5% unanswerable. Details of filters and exclusion counts are in `v1.0/selection/stats.json` and in `DATA_CARD.md`.
+2. **Teacher labelling** (step 7): Claude Opus received each item's input, question and gold answer (`teacher/INSTRUCTIONS.md`) and returned evidence, a rationale of at most 40 words and whether it agrees with the gold. The gold answer is never changed.
+3. **Verification** (`teacher/check_teacher.py`): schema valid, answer equals gold (relaxed match), every evidence string points at a real cell, colour mapping or title in the input, rationale length. Every kept item passes all checks.
+4. **Rejection and replacement** (`add_teacher_labels.py`): when the teacher judged the gold answer wrong or unsupported, the item was dropped and replaced by an unused item from the same split and stratum, which went through the same teacher and checks.
 
-Two consistency checks against the human gold answer:
-- "Which country does the red line represent?": if the answer is a series or bar label, that label must have the colour the question named. 20 / 2 / 6 questions failed this and were dropped.
-- "What colour is X?": the gold colour must be one of the chart's colours, and it must be X's colour when the question names X. When the human's word differs from the input's name for the same colour (e.g. gold "gray" or "navy blue" for a colour the input calls "dark blue"), the target **`answer` uses the input's name** and the human's word stays in `gold_answer_raw` (`flags.colour_answer_rewritten`). This affects 11 / 2 / 1 items.
+| | Train | Val |
+|---|---:|---:|
+| Items labelled by the teacher (originals + replacement candidates) | 1,672 | 200 |
+| Originals rejected | 143 (10.4%) | 13 (8.0%) |
+| ...teacher disputed the gold | 134 | 12 |
+| ...colour mapping found unreliable (below) | 9 | 1 |
+| Replaced | 142 | 13 |
 
-"What colour", title and "how many colours" questions were all excluded as "appearance" in v0.9; they are kept now when the input contains the answer. Gridlines, dotted/dashed lines, fonts, shading and legend-only questions are still excluded.
+Across everything labelled, the teacher disputed 12% of gold answers: Pew 29%, OECD 13%, OWID 11%, Statista 5.5%; arithmetic questions 17%, visual-reference 7%, retrieval 4%. Typical causes are wrong arithmetic in the human label (a mean given as the median, a ratio inverted), percentage points written as fractions (0.58 for 58), and Pew tables with garbled or missing cells (`nan`, `0` as a placeholder). Every rejection and the teacher's reason is in `teacher/rejected.jsonl`.
 
-## Exclusions (questions the text can't answer)
+**Colour fix found during labelling.** In about half of the OECD bar charts the annotation lists bar labels in a different order from bar values and colours, and some Statista pie annotations repeat a slice label. For those charts the per-bar/per-slice colour line was wrong. The build now flags them (`mark_colours_unreliable`); the final files drop that line from the input (`flags.mark_colours_removed`: 52 train, 6 val items), and colour questions on those charts were rejected and replaced. The test split got the same input repair (9 items); none of its colour questions were affected.
 
-| Reason | Train | Val | Test |
-|---|---:|---:|---:|
-| Raw human-written pairs | 7,398 | 960 | 1,250 |
-| Number look-up whose gold value isn't in the table (mostly Pew labels on a different scale, e.g. 0.37 vs 37) | 371 | 44 | 32 |
-| Colour question on a chart whose annotation has no colour (Pew `UNK`) | 204 | 16 | 29 |
-| Text answer not in the input (table, title, series names) | 54 | 4 | 5 |
-| Colour named in the question isn't in the chart | 41 | 8 | 3 |
-| Colour named matches two colours equally | 27 | 1 | 7 |
-| "What colour" answer isn't a colour in the chart | 24 | 5 | 6 |
-| Colour points to a different label than the gold answer | 20 | 2 | 6 |
-| Gold colour isn't the named item's colour | 2 | 0 | 2 |
-| Asks about appearance (gridlines, dotted line, font, shading, legend) | 16 | 2 | 0 |
-| Asks about the title of a chart that has none | 1 | 0 | 0 |
-| Table unparseable or < 2 numeric cells | 24 | 8 | 8 |
-| Identical table in an eval split (leakage) | 18 | 2 | 0 |
-| Exact duplicate | 1 | 0 | 0 |
-| **Excluded total** | **803** (11%) | **92** (10%) | **98** (8%) |
-| Answerable pool left | 6,595 | 868 | 1,152 |
-| ...of which matches the finance/economy/health/business lexicon | 2,987 | 410 | 532 |
+## Rebuild
 
-In v0.9 the excluded total was 2,029 / 231 / 287, with 1,221 / 136 / 190 for unresolvable colour references and 373 / 44 / 52 for appearance questions. Of the 1,636 / 185 / 248 questions that mention a colour, **1,259 / 142 / 193 are now in the answerable pool**.
+```bash
+curl -L -o cq.zip "https://huggingface.co/datasets/ahmed-masry/ChartQA/resolve/af8b6f5c08c95085271561c2a3f9d15f2b5a9031/ChartQA%20Dataset.zip"
+unzip -q cq.zip -x '*.png'
+python3 build_dataset.py --chartqa "ChartQA Dataset" --out v1.0/selection --pool-out pool.json
+python3 add_teacher_labels.py merge --data v1.0/selection --pool pool.json --teacher teacher
+```
 
-## Sampling
+The merge reuses the saved teacher outputs in `teacher/outputs/`, so the rebuild is byte-identical without calling the teacher again (checked). `select` and `topup` are the commands that chose the replacement candidates.
 
-1. Domain filter (step 4): the lexicon is applied to column headers, row labels, the question, and now the **chart title and y-axis label**. Every split's domain pool was larger than needed, so all answerable items are domain-matched.
-2. Stratified sampling within each official split, proportional over **source × chart type × answer type × question type** (chart type is new in v1.0).
-3. ~5% unanswerable items: a question from the same split paired with a different chart that shares no content words or numbers with it (checked against the full input, including title and series names) and has no colour the question names. Target is `answer: null`.
+## Still to do
 
-Final mix (train / val / test):
+- **Manual audit (step 9):** two team members fill in `audit/audit_sheet.csv` (gold correct, rationale faithful, schema OK, Y/N each), then `python3 make_audit_sheet.py --kappa audit/audit_sheet.csv` reports agreement and Cohen's kappa. Fix or drop flagged items and log the change.
+- **Freeze (step 10):** after the audit, tag the repo `v1.0-frozen`.
 
-| | Train | Val | Test |
-|---|---:|---:|---:|
-| Statista | 902 | 93 | 110 |
-| Pew | 275 | 17 | 19 |
-| OWID | 208 | 45 | 42 |
-| OECD | 65 | 15 | 9 |
-| Vertical bar / horizontal bar / line / pie | 518 / 450 / 300 / 182 | 51 / 61 / 37 / 21 | 60 / 58 / 41 / 21 |
-| Number / text / yes-no / unanswerable | 973 / 309 / 96 / 72 | 111 / 44 / 7 / 8 | 118 / 42 / 11 / 9 |
-| Arithmetic-comparison / visual-reference / retrieval | 754 / 370 / 254 | 87 / 46 / 29 | 95 / 40 / 36 |
-| Mentions a colour | 227 | 20 | 22 |
-| Input has a chart title | 547 | 77 | 69 |
-
-Statista is 62% of train (70% in v0.9) because titles let more Pew and OWID charts pass the domain filter.
-
-Question types come from keyword rules (`ARITH`, `COLOUR`, `STRUCTURE` regexes in the script). They are good enough for stratification and breakdowns, not exact.
-
-## Changes from v0.9 that affect other work
-
-- **The test set changed.** Only 54 of the 180 v0.9 test items are also in v1.0 (651 / 65 shared in train / val). Any baseline already run on v0.9 test must be rerun on v1.0.
-- The input text is longer (title and colour lines) and has two new header lines; prompts that parse the input should not assume the v0.9 layout.
-- Tables now come from the Hugging Face zip, not the GitHub repo. The question files are identical; the tables were not compared file by file.
-
-## Known gaps
-
-- Colour names are a rule-based mapping from hex codes, so a few will disagree with what a person would say (Statista's `#2876dd` is "blue", though people sometimes call it "light blue" next to the dark blue series). Check colour items in the audit.
-- Pew tables contain OCR noise from the original extraction (e.g. "Ra rely", "understa nd"), and some Pew series names in the annotation differ slightly from the table header. Focus the 150-item audit (step 9) on Pew and on colour questions.
-- Steps 7 (teacher rationales), 9 (manual audit) and 10 (freeze tag + data card) are still to do.
+v0.9 (tables only, no annotations) is kept in `v0.9/` with its own README.

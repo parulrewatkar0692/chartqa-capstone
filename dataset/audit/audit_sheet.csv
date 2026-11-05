@@ -1,0 +1,2163 @@
+id,source,chart_type,question_type,question,target_json,input_text,reviewer_A_gold_correct,reviewer_A_rationale_faithful,reviewer_A_schema_ok,reviewer_B_gold_correct,reviewer_B_rationale_faithful,reviewer_B_schema_ok,notes
+train-00108924005661-1591,owid,line,arithmetic_comparison,For how many years is the value of Spain lower than that of Marshall Islands?,"{""answer"": 2, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Spain (all columns)"", ""Row=Marshall Islands (all columns)""], ""rationale"": ""Spain is lower only in 1990 (2.11 vs 2.38) and 1991 (2.40 vs 2.43); from 1992 Spain is higher. That is 2 years.""}","Source: OWID
+Chart type: line, 5 series
+Title: Death rates from substance use disorders, 1990 to 1997
+Category axis: Entity
+Series: Ethiopia (colour: purple) | Spain (colour: red) | Marshall Islands (colour: pink) | Micronesia (country) (colour: dark teal) | North Macedonia (colour: dark blue)
+Table columns: 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997
+Table:
+| Entity | 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 |
+|---|---|---|---|---|---|---|---|---|
+| Ethiopia | 3.103853965520979 | 3.105257479193258 | 3.1150918454546463 | 3.109124688406379 | 3.09069539843674 | 3.0623911556521883 | 3.0083849430909364 | 2.973933530898828 |
+| Spain | 2.114936446054714 | 2.40195779196127 | 2.510184862574502 | 2.559859170812669 | 2.6400345791287974 | 2.720140075841722 | 2.7624788224686747 | 2.784288051800773 |
+| Marshall Islands | 2.3828791872717017 | 2.4290072203823003 | 2.465702653127132 | 2.486763308987489 | 2.514889365051584 | 2.562792357757825 | 2.585802826753876 | 2.6323128738530355 |
+| Micronesia (country) | 2.0080602762673294 | 2.022375421003269 | 2.035267279253756 | 2.04514643087724 | 2.05415233456096 | 2.057611179228004 | 2.064255788968407 | 2.0689625250555945 |
+| North Macedonia | 0.981421714122578 | 0.9720712500590776 | 1.024278821562533 | 1.061003469760063 | 1.0267184804332634 | 1.0735302870719472 | 1.1013489811487502 | 1.1059132885294547 |",,,,,,,
+train-01200566001630-1033,owid,h_bar,visual_reference,What age group shows the highest value of death rate due to Ethiopia?,"{""answer"": ""Under-5s"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Protein-energy malnutrition death rates by age, Ethiopia, 1990 (all rows)""], ""rationale"": ""Under-5s has the highest death rate at 263.52, above 70+ years old at 219.86.""}","Source: OWID
+Chart type: horizontal bar
+Title: Protein-energy malnutrition death rates by age, Ethiopia, 1990
+Category axis: Country
+Series: Protein-energy malnutrition death rates by age, Ethiopia, 1990
+Bar colours: Under-5s = red; 70+ years old = dark green; All ages = purple; Age-standardized = pink; 50-60 years old = dark teal; 5-14 years old = red; 15-49 years old = dark blue
+Table:
+| Country | Protein-energy malnutrition death rates by age, Ethiopia, 1990 |
+|---|---|
+| Under-5s | 263.52 |
+| 70+ years old | 219.86 |
+| All ages | 62.21 |
+| Age-standardized | 56.54 |
+| 50-60 years old | 48.68 |
+| 5-14 years old | 7.41 |
+| 15-49 years old | 5.12 |",,,,,,,
+train-01503134001790-1034,owid,h_bar,visual_reference,What color  bar does Tanzania represent?,"{""answer"": ""dark blue"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Tanzania = dark blue""], ""rationale"": ""The bar colours list Tanzania as dark blue.""}","Source: OWID
+Chart type: horizontal bar
+Title: Armed forces personnel (% of total labor force), 1999
+Category axis: Country
+Series: Armed forces personnel (% of total labor force), 1999
+Bar colours: Qatar = dark teal; Vietnam = red; Tanzania = dark blue
+Table:
+| Country | Armed forces personnel (% of total labor force), 1999 |
+|---|---|
+| Qatar | 3.62 |
+| Vietnam | 1.27 |
+| Tanzania | 0.23 |",,,,,,,
+train-01503134001823-1603,owid,line,retrieval,"Which of the following countries has higher armed force personnel over the years, Germany or Guinea?","{""answer"": ""Germany"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Germany (all columns)"", ""Row=Guinea (all columns)""], ""rationale"": ""Germany is above Guinea in every year with data, e.g. 0.73 vs 0.58 in 2002 and 0.47 vs 0.30 in 2011.""}","Source: OWID
+Chart type: line, 2 series
+Title: Armed forces personnel (% of total labor force), 2002 to 2011
+Category axis: Entity
+Series: Germany (colour: red) | Guinea (colour: dark blue)
+Table columns: 2002 | 2004 | 2006 | 2008 | 2010 | 2011
+Table:
+| Entity | 2002 | 2004 | 2006 | 2008 | 2010 | 2011 |
+|---|---|---|---|---|---|---|
+| Germany | 0.731700902029007 | 0.700180355611741 | 0.591209266162219 | 0.582399115822667 | 0.598488220160079 | 0.470027993524357 |
+| Guinea | 0.580910440164569 | 0.318472997253605 | nan | 0.504701694735164 | 0.488668338266858 | 0.304378748127328 |",,,,,,,
+train-10002-3194,pew,h_bar,retrieval,How much percentage of people are very confident that the National government will help solve the major problems in out country?,"{""answer"": 39, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=National government*, Col=Very confident (39)""], ""rationale"": ""National government has 39 in the Very confident column.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Most Express Confidence in Government, Aid Groups, Domestic and Foreign Companies Median percent very/somewhat confident that__ will help solve the major problems in our country
+Category axis: Entity
+Series: Very confident | Somewhat confident
+Table:
+| Entity | Very confident | Somewhat confident |
+|---|---|---|
+| Foreign companies | 24 | 60 |
+| Domestic companies | 26 | 66 |
+| Fore ign aid organizations | 32 | 70 |
+| National government* | 39 | 78 |",,,,,,,
+train-10504-41,pew,line,arithmetic_comparison,Is the median of first three points of orange graph smaller than largest value of green graph?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Colour: Bad = orange"", ""Colour: Good = green"", ""Col=Bad (all rows)"", ""Col=Good (all rows)""], ""rationale"": ""Orange (Bad) first three are 83, 56, 64, median 64; green (Good) maximum is 38. 64 is not smaller than 38, so No.""}","Source: Pew
+Chart type: line, 2 series
+Title: Russian Views of Economy Souring How would you describe the current economic situation in Russia?
+Category axis: Year
+Series: Bad (colour: orange) | Good (colour: green)
+Table:
+| Year | Good | Bad |
+|---|---|---|
+| 2002 | 0 | 83 |
+| 2007 | 38 | 56 |
+| 2012 | 0 | 64 |
+| 2015 | 0 | 73 |",,,,,,,
+train-10967-533,pew,pie,arithmetic_comparison,"Is the total add up value of smallest two segment is greater then ""More than Fair Share""?","{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=DK, Col=Value (2)"", ""Row=Less than fair share, Col=Value (4)"", ""Row=More than About the fair share right amount, Col=Value (4053)""], ""rationale"": ""Smallest two are DK 2 and Less than fair share 4, sum 6; More than fair share (garbled 4053, about 40) is larger, so No.""}","Source: Pew
+Chart type: pie
+Title: 53% Say They Pay 'About Right Amount' in Taxes Considering what you get from fed. gov't, do you pay of taxes?
+Category axis: Entity
+Series: Value
+Table:
+| Entity | Value |
+|---|---|
+| About the right amount | 53 |
+| DK | 2 |
+| More than About the fair share right amount | 4053 |
+| Less than fair share | 4 |",,,,,,,
+train-11759-295,pew,line,arithmetic_comparison,What is the ratio of change in the preference for Strong Economy from 2012 to 2014?,"{""answer"": 0.2373, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2012, Col=Strong economy (59)"", ""Row=2014, Col=Strong economy (73)""], ""rationale"": ""Strong economy rose from 59 to 73, a change of 14; 14 / 59 = 0.2373.""}","Source: Pew
+Chart type: line, 2 series
+Title: Greater Preference for Strong Economy over Good Democracy Which is more important to you?
+Category axis: Year
+Series: Strong economy (colour: orange) | Good democracy (colour: green)
+Table:
+| Year | Good democracy | Strong economy |
+|---|---|---|
+| 2012 | 40 | 59 |
+| 2013 | 30 | 65 |
+| 2014 | 25 | 73 |",,,,,,,
+train-12662-617,pew,pie,arithmetic_comparison,"Is the total of Apple, Twitter and Pandora ad revenue greater than Google's share?","{""answer"": ""Yes"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Col=Value (all rows)""], ""rationale"": ""Shares sum to 100: 100 - 26.9 - 15.4 - 35.7 = 22.0 for Pandora, Twitter and Apple together, which is greater than Google's 15.4.""}","Source: Pew
+Chart type: pie
+Title: Majority of Mobile Display Ad Dollars Go To Five Tech Companies Share of 2013 mobile display ad revenues
+Category axis: Entity
+Series: Value
+Table:
+| Entity | Value |
+|---|---|
+| Other . . | 26..9 |
+| Google | 15.4 |
+| Pandora | nan |
+| Facebook . | 35.7 |
+| Twitter | nan |
+| Apple | nan |",,,,,,,
+train-15890399002800-1177,owid,h_bar,arithmetic_comparison,What's the average of two largest bar?,"{""answer"": 1910.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Puerto Rico (all columns)"", ""Row=Suriname (all columns)""], ""rationale"": ""The two largest bars are Puerto Rico 2362 and Suriname 1459; (2362 + 1459) / 2 = 1910.5.""}","Source: OWID
+Chart type: horizontal bar
+Title: Per capita electricity generation from oil, 2000
+Category axis: Country
+Series: Per capita electricity generation from oil, 2000
+Bar colours: Puerto Rico = pink; Suriname = dark teal; Cuba = purple; Congo = red; Israel = dark blue
+Table:
+| Country | Per capita electricity generation from oil, 2000 |
+|---|---|
+| Puerto Rico | 2362 |
+| Suriname | 1459 |
+| Cuba | 1054 |
+| Congo | 1 |
+| Israel | 0 |",,,,,,,
+train-19416987007869-1231,owid,h_bar,retrieval,IS the value of Guinea more then Democratic Republic of Congo?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Guinea (all columns)"", ""Row=Democratic Republic of Congo (all columns)""], ""rationale"": ""Guinea is 116.08 and Democratic Republic of Congo 123.76; 116.08 < 123.76, so no.""}","Source: OWID
+Chart type: horizontal bar
+Title: Stroke death rates, 1997
+Category axis: Country
+Series: Stroke death rates, 1997
+Bar colours: Bulgaria = dark teal; Democratic Republic of Congo = dark blue; Guinea = red
+Table:
+| Country | Stroke death rates, 1997 |
+|---|---|
+| Bulgaria | 200.74 |
+| Democratic Republic of Congo | 123.76 |
+| Guinea | 116.08 |",,,,,,,
+train-23326450006962-1258,owid,h_bar,visual_reference,What is the name of largest bar?,"{""answer"": ""70+ years old"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=70+ years old (all columns)""], ""rationale"": ""70+ years old has the largest value, 6259.94.""}","Source: OWID
+Chart type: horizontal bar
+Title: Change in cardiovascular disease death rates by age, Afghanistan, 2000
+Category axis: Country
+Series: Change in cardiovascular disease death rates by age, Afghanistan, 2000
+Bar colours: 70+ years old = dark green; 50-69 years old = red; Age-standardized = pink; All ages = purple; 15-49 years old = dark teal; Under-5s = red; 5-14 years old = dark blue
+Table:
+| Country | Change in cardiovascular disease death rates by age, Afghanistan, 2000 |
+|---|---|
+| 70+ years old | 6259.94 |
+| 50-69 years old | 1748.96 |
+| Age-standardized | 778.13 |
+| All ages | 304.11 |
+| 15-49 years old | 98.98 |
+| Under-5s | 7.54 |
+| 5-14 years old | 2.04 |",,,,,,,
+train-24098382002241-1270,owid,h_bar,visual_reference,What denotes the light blue color bar ??,"{""answer"": ""Electricity & Heat"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Electricity & Heat = blue"", ""Colour: Land use change and forestry = dark blue""], ""rationale"": ""The light blue bar is Electricity & Heat (blue); the other blue bar is dark blue.""}","Source: OWID
+Chart type: horizontal bar
+Title: Per capita CO2 emissions by sector, Kazakhstan, 1990
+Category axis: Country
+Series: Per capita CO2 emissions by sector, Kazakhstan, 1990
+Bar colours: Electricity & Heat = blue; Manufacturing & construction = dark green; Transport = pink; International aviation & shipping = red; Buildings = red; Fugitive emissions = purple; Land use change and forestry = dark blue
+Table:
+| Country | Per capita CO2 emissions by sector, Kazakhstan, 1990 |
+|---|---|
+| Electricity & Heat | 7.03 |
+| Manufacturing & construction | 4.94 |
+| Transport | 0.88 |
+| International aviation & shipping | 0.16 |
+| Buildings | 0.02 |
+| Fugitive emissions | 0.02 |
+| Land use change and forestry | 0.02 |",,,,,,,
+train-24497347006167-1727,owid,line,arithmetic_comparison,What is the difference between the alcohol use disorders of Jordan and congo?,"{""answer"": 40, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Congo, Col=2004 (51.64862643710836)"", ""Row=Jordan, Col=2004 (11.10836556073681)""], ""rationale"": ""In 2004 Congo is 51.65 and Jordan 11.11; 51.65 - 11.11 = 40.54, about 40.""}","Source: OWID
+Chart type: line, 5 series
+Title: Deaths from alcohol use disorders, 2004 to 2014
+Category axis: Entity
+Series: Mauritius (colour: pink) | Congo (colour: purple) | Central African Republic (colour: dark teal) | Jordan (colour: red) | Bermuda (colour: dark blue)
+Table columns: 2004 | 2006 | 2008 | 2010 | 2012 | 2014
+Table:
+| Entity | 2004 | 2006 | 2008 | 2010 | 2012 | 2014 |
+|---|---|---|---|---|---|---|
+| Mauritius | 57.51921629332273 | 70.82790177057069 | 79.93091406177555 | 79.92884310331225 | 75.05200988758493 | 72.76568598790361 |
+| Congo | 51.64862643710836 | 52.23641687427294 | 54.07702743475874 | 55.63866035899216 | 59.39574532739909 | 64.197837172117 |
+| Central African Republic | 57.41137824980005 | 57.54329793572976 | 56.65346999202921 | 59.715898825805866 | 61.61608597217384 | 62.40189704114682 |
+| Jordan | 11.10836556073681 | 11.488803130605705 | 11.559646402680649 | 12.50632682285042 | 14.251765879101235 | 16.815443836683293 |
+| Bermuda | 0.7907803700806538 | 0.8060713730434834 | 0.8498592025550978 | 0.8886203505712191 | 0.9219392880459916 | 0.9874125612048228 |",,,,,,,
+train-264-2105,pew,h_bar,arithmetic_comparison,Is the difference between the two largest values greater than the smallest value in navy blue bars?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Colour: Very/somewhat confident = blue"", ""Col=Very/somewhat confident (all rows)""], ""rationale"": ""Blue bars are 81, 59 and 49. Two largest differ by 81 - 59 = 22, which is less than 49, so no.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Half of Americans are not confident in the federal government to protect their records, and 41% say the same about public health organizations % of U.S. adults who are safe from hackers or unauthorized users that each group will keep their personal records
+Category axis: Entity
+Series: Very/somewhat confident (colour: blue) | Not at all/not too confident (colour: green)
+Table:
+| Entity | Very/somewhat confident | Not at all/not too confident |
+|---|---|---|
+| health care providers | 81 | 19 |
+| Their medical doctors or | 81 | 19 |
+| organizations | 59 | 41 |
+| Public health | 59 | 41 |
+| The federal government | 49 | 50 |",,,,,,,
+train-35667701004145-1766,owid,line,retrieval,In which year maximum rural population was living in poverty in Cameroon?,"{""answer"": 1996, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Rural population (all columns)""], ""rationale"": ""Rural population is 59.6 in 1996 and 55.0 in 2007, so the maximum is 1996.""}","Source: OWID
+Chart type: line, 3 series
+Title: Share of urban and rural population living in poverty by national povertylines, Cameroon, 1996 to 2007
+Category axis: Entity
+Series: Rural population (colour: dark teal) | Rural population (colour: red) | Urban population (colour: dark blue)
+Table columns: 1996 | 1998 | 2000 | 2002 | 2004 | 2006 | 2007
+Table:
+| Entity | 1996 | 1998 | 2000 | 2002 | 2004 | 2006 | 2007 |
+|---|---|---|---|---|---|---|---|
+| Poverty population | 53.3 | nan | nan | nan | nan | nan | 39.9 |
+| Rural population | 59.6 | nan | nan | nan | nan | nan | 55.0 |
+| Urban population | 41.4 | nan | nan | nan | nan | nan | 12.2 |",,,,,,,
+train-3613-2346,pew,h_bar,arithmetic_comparison,"What percent in Total agree that Government has obligation to take care of displaced workers, even if it means raising taxes substantially?","{""answer"": 50, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Total, Col=Govt. has obligation to take care of displaced workers, if it even means raising taxes substantially (50)""], ""rationale"": ""The Total row shows 50% agreeing the government has an obligation to care for displaced workers.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Partisan split on government's duty to help workers displaced by machines % of U.S. adults in each group who say they agree with each statement in the event that robots and computers are capable of doing many huтап jobs
+Category axis: Entity
+Series: Govt. has obligation to take care of displaced workers, if it even means raising taxes substantially | Individuals have obligation well-being, to care for own if machines have even already taken many jobs
+Table:
+| Entity | Govt. has obligation to take care of displaced workers, if it even means raising taxes substantially | Individuals have obligation well-being, to care for own if machines have even already taken many jobs |
+|---|---|---|
+| Dem Lean Dem | 65 | 34 |
+| Rep/Lean Rep | 30 | 68 |
+| Total | 50 | 49 |",,,,,,,
+train-36217687004329-1364,owid,h_bar,retrieval,Which drugs show the value of 433 death cases?,"{""answer"": ""Opioids"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Opioids, Col=Number of deaths from illicit drug overdoses, Central Asia, 1997 (433)""], ""rationale"": ""The bar with 433 deaths is Opioids.""}","Source: OWID
+Chart type: horizontal bar
+Title: Number of deaths from illicit drug overdoses, Central Asia, 1997
+Category axis: Country
+Series: Number of deaths from illicit drug overdoses, Central Asia, 1997
+Bar colours: Opioids = purple; Other drugs = dark teal; Cocaine = red; Amphetamine = dark blue
+Table:
+| Country | Number of deaths from illicit drug overdoses, Central Asia, 1997 |
+|---|---|
+| Opioids | 433 |
+| Other drugs | 143 |
+| Cocaine | 36 |
+| Amphetamine | 29 |",,,,,,,
+train-39086629002112-1774,owid,line,visual_reference,What country has the highest level of methane emissions per capita?,"{""answer"": ""Armenia"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Armenia (all columns)"", ""Row=Malawi (all columns)"", ""Row=Singapore (all columns)""], ""rationale"": ""Armenia has the highest value in every year shown, e.g. 1.01 in 1990 versus 0.97 for Malawi and 0.42 for Singapore.""}","Source: OWID
+Chart type: line, 3 series
+Title: Per capita methane emissions
+Category axis: Entity
+Series: Armenia (colour: dark teal) | Singapore (colour: red) | Malawi (colour: dark blue)
+Table columns: 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 | 2004 | 2006 | 2008
+Table:
+| Entity | 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 | 2004 | 2006 | 2008 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Armenia | 1.0146975692481628 | 0.9207086842869592 | 0.843483556638246 | 0.7765151515151515 | 0.6754583467352847 | 0.5960912052117264 | 0.6361239288068556 | 0.6831056314561812 | 0.72684246112238 | 0.7943603851444292 |
+| Singapore | 0.4181878526385662 | 0.4125 | 0.4215456674473068 | 0.4233095107201759 | 0.4221704221704221 | 0.4244229337304542 | 0.4702729044834308 | 0.5147234857553268 | 0.5542935029532031 | 0.5841708542713567 |
+| Malawi | 0.9687367077839216 | 0.7567623373941771 | 0.5633080238046378 | 0.5806644717150554 | 0.5742987111448067 | 0.5623822764373486 | 0.5822093221785898 | 0.5950251991546089 | 0.5765376907661477 | 0.5594405594405595 |",,,,,,,
+train-3958-2531,pew,h_bar,arithmetic_comparison,Is the average of green bars equal to two times of smallest blue bar?,"{""answer"": ""Yes"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Colour: Unacceptable = green"", ""Colour: Acceptable = blue"", ""Row=Personal finance score, Col=Unacceptable (68)"", ""Row=Automated video analysis of job interviews, Col=Unacceptable (67)"", ""Row=Automated resume screening of job applicants, Col=Unacceptable (57)"", ""Row=Criminal risk assessment, Col=Unacceptable (56)"", ""Row=Personal finance score, Col=Acceptable (31)""], ""rationale"": ""Green bars 68, 67, 57, 56 average 62. Smallest blue bar is 31, and 2 x 31 = 62, so they are equal.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Majorities of Americans find it unacceptable to use algorithms to make decisions with real-world consequences for humans % of U.S. adults who say the following examples of algorithmic decision- making are ...
+Category axis: Entity
+Series: Unacceptable (colour: green) | Acceptable (colour: blue)
+Table columns: Unacceptable | Acceptable | Acceptable.1
+Table:
+| Entity | Unacceptable | Acceptable | Acceptable.1 |
+|---|---|---|---|
+| consumer data | 0 | 0 | 0 |
+| using many types of | 68 | 31 | 0 |
+| S | 68 | 31 | 0 |
+| Personal finance score | 68 | 31 | 0 |
+| of job interviews | 67 | 32 | 0 |
+| @ Automated video analysis of job interviews | 67 | 32 | 0 |
+| Automated video analysis of job interviews | 67 | 32 | 0 |
+| of job applicants | 57 | 41 | 0 |
+| Automated resume screening of job applicants | 57 | 41 | 0 |
+| for people up for parole | 56 | 42 | 0 |
+| Criminal risk assessment | 56 | 42 | 0 |",,,,,,,
+train-4092-2477,pew,h_bar,arithmetic_comparison,How many countries have values over 40%?,"{""answer"": 5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Values (all rows)""], ""rationale"": ""Values over 40: Sweden 41, Israel 49, UK 49, Australia 63, Canada 65, which is 5 countries.""}","Source: Pew
+Chart type: horizontal bar
+Title: Roughly a third of all U.S. immigrants have a college degree, a lower share than in many other advanced economies % of country's foreign-born population, ages 25 and older, with a postsecondary diploma or degree, 2015
+Category axis: Entity
+Series: UK (single series)
+Table:
+| Entity | Values |
+|---|---|
+| Italy | 14.0 |
+| Greece | 22.0 |
+| Germany | 22.0 |
+| France | 26.0 |
+| Netherlands | 28.0 |
+| Spain | 29.0 |
+| U.S. | 36.0 |
+| Sweden | 41.0 |
+| Israel | 49.0 |
+| UK | 49.0 |
+| Australia | 63.0 |
+| Canada | 65.0 |",,,,,,,
+train-4128-2536,pew,h_bar,retrieval,"16, 20, 35 Find missing data?","{""answer"": 28, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Very/somewhat difficult (all rows)"", ""Row=Political affiliation, Col=Very/somewhat difficult (28)""], ""rationale"": ""Very/somewhat difficult values are 35, 28, 20, 16; besides 16, 20, 35 the missing value is 28.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Social media users say it is easy for sites to identify their race and interests % of U.S. adult social media users who say it would be for social media sites to figure out their ...
+Category axis: Entity
+Series: Very/somewhat difficult (colour: green) | Very/somewhat easy (colour: blue)
+Table:
+| Entity | Very/somewhat difficult | Very/somewhat easy |
+|---|---|---|
+| Religious beliefs | 35 | 65 |
+| Political affiliation | 28 | 71 |
+| Hobbies and interests | 20 | 79 |
+| Race or ethnicity | 16 | 84 |",,,,,,,
+train-4297-2562,pew,h_bar,visual_reference,What's the percentage value of the top blue bar?,"{""answer"": 65, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Remain as close = blue"", ""Row=US, Col=Remain as close (65)""], ""rationale"": ""Rows run bottom to top, so the top bar is US; its blue Remain as close bar is 65%.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Americans want to remain close to Europe, but Germans want more foreign policy independence from U.S. Do you think the relationship between the U.S. and Europe/U.S. and Germany should remain as close as it has been or do you think that the U.S./Germany should take a more independent approach to foreign policy than it has in the past?
+Category axis: Entity
+Series: Remain as close (colour: blue) | More independent (colour: green)
+Table:
+| Entity | Remain as close | More independent |
+|---|---|---|
+| Germany | 24 | 72 |
+| US | 65 | 30 |",,,,,,,
+train-4326-657,pew,pie,arithmetic_comparison,What is the difference in the value Worse and Neither better nor worse?,"{""answer"": 5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Worse, Col=Value (49)"", ""Row=Neither better nor worse, Col=Value (44)""], ""rationale"": ""Worse 49 - Neither 44 = 5.""}","Source: Pew
+Chart type: pie
+Title: About half of U.S. public says GM foods are worse for one's health % of U.S. adults who say genetically modified foods are _for one's health than foods with no genetically modified ingredients
+Category axis: Entity
+Series: Value
+Slice colours: Neither better nor worse = grey; Worse = green; Better = blue; No answer = grey
+Table:
+| Entity | Value |
+|---|---|
+| Worse | 49 |
+| Better | 5 |
+| Neither better nor worse | 44 |
+| No answer | 1 |",,,,,,,
+train-4852-2448,pew,h_bar,retrieval,What's the percentage of users choosing to delete the app?,"{""answer"": 26, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Deleted the app from phone their, Col=Values (26.0)""], ""rationale"": ""Deleted the app from their phone is 26%.""}","Source: Pew
+Chart type: horizontal bar
+Title: 42% of Facebook users have taken a break from the site in the past year % of U.S. adults who use Facebook who say they have done the following in the last 12 months .
+Category axis: Entity
+Series: UNK (single series)
+Table:
+| Entity | Values |
+|---|---|
+| Deleted the app from phone their | 26.0 |
+| Taken a break from checking for several weeks or more | nan |
+| Adjusted their privacy settings | 54.0 |
+| Any of the activities | 7.4 |",,,,,,,
+train-49302962006837-1452,owid,h_bar,visual_reference,Which place shows the highest numbers of voters?,"{""answer"": ""Eastern Europe"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Political participation, 1958 (all rows)""], ""rationale"": ""Eastern Europe has the highest value, 39.57.""}","Source: OWID
+Chart type: horizontal bar
+Title: Political participation, 1958
+Category axis: Country
+Series: Political participation, 1958
+Bar colours: Eastern Europe = red; Western Europe = purple; Latin America and Caribbean = dark teal; World = black
+Table:
+| Country | Political participation, 1958 |
+|---|---|
+| Eastern Europe | 39.57 |
+| Western Europe | 30.9 |
+| Latin America and Caribbean | 21.07 |
+| World | 16.76 |",,,,,,,
+train-5254-2392,pew,h_bar,visual_reference,What's the value of the top leftmost bar?,"{""answer"": 51, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=All Rep/Lean Rep, Col=Unfa vora ble (51)""], ""rationale"": ""Rows run bottom to top, so the top bar is All Rep/Lean Rep; its leftmost (Unfavorable) value is 51.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Republicans divided by age, education in views of labor unions % who have a opinion of labor unions
+Category axis: Entity
+Series: Unfa vora ble (colour: light brown) | Favorable (colour: dark brown)
+Table:
+| Entity | Unfa vora ble | Favorable |
+|---|---|---|
+| Mod/ Liberal | 42 | nan |
+| Conse rvative | 56 | 36.0 |
+| College grad- No colle ge degree | 65 | 45.0 |
+| 50+ | 56 | 35.0 |
+| Ages 18-49 | 45 | 46.0 |
+| All Rep/Lean Rep | 51 | 40.0 |",,,,,,,
+train-5254-2393,pew,h_bar,arithmetic_comparison,Is the sum of the two smallest Unfavorable bars greater than 60?,"{""answer"": ""Yes"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Col=Unfa vora ble (all rows)""], ""rationale"": ""Smallest Unfavorable bars are 42 and 45; 42 + 45 = 87, greater than 60.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Republicans divided by age, education in views of labor unions % who have a opinion of labor unions
+Category axis: Entity
+Series: Unfa vora ble (colour: light brown) | Favorable (colour: dark brown)
+Table:
+| Entity | Unfa vora ble | Favorable |
+|---|---|---|
+| Mod/ Liberal | 42 | nan |
+| Conse rvative | 56 | 36.0 |
+| College grad- No colle ge degree | 65 | 45.0 |
+| 50+ | 56 | 35.0 |
+| Ages 18-49 | 45 | 46.0 |
+| All Rep/Lean Rep | 51 | 40.0 |",,,,,,,
+train-58415953006360-1493,owid,h_bar,arithmetic_comparison,Does the sum of smallest two bar is ewual to the value of largest bar?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Latin America and Caribbean, Col=Death rate from unintentional poisoning, 1990 (0.94)"", ""Row=Mexico, Col=Death rate from unintentional poisoning, 1990 (1.34)"", ""Row=Rwanda, Col=Death rate from unintentional poisoning, 1990 (2.3)""], ""rationale"": ""Smallest two sum to 0.94 + 1.34 = 2.28, which is not equal to the largest, 2.3.""}","Source: OWID
+Chart type: horizontal bar
+Title: Death rate from unintentional poisoning, 1990
+Category axis: Country
+Series: Death rate from unintentional poisoning, 1990
+Bar colours: Rwanda = purple; Bermuda = dark blue; Mexico = dark teal; Latin America and Caribbean = red
+Table:
+| Country | Death rate from unintentional poisoning, 1990 |
+|---|---|
+| Rwanda | 2.3 |
+| Bermuda | 1.39 |
+| Mexico | 1.34 |
+| Latin America and Caribbean | 0.94 |",,,,,,,
+train-5953-2637,pew,h_bar,arithmetic_comparison,What is the difference between major reasons and minor reasons seen as fun??,"{""answer"": 0.16, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=It's fun, Col=Major reason (23)"", ""Row=It's fun, Col=Minor reason (39)""], ""rationale"": ""For It's fun, minor reason is 39 and major reason 23; 39 - 23 = 16 points, i.e. 0.16.""}","Source: Pew
+Chart type: horizontal bar, 3 series
+Title: Most digital voice assistant users cite freeing up their hands as a major reason for adoption % of digitalvoice assistant users who say the following are major/minor reasons for using them
+Category axis: Entity
+Series: Major reason (colour: dark blue) | Minor reason (colour: light blue) | Net
+Table:
+| Entity | Major reason | Minor reason | Net |
+|---|---|---|---|
+| It's easier for children to use | 14 | 20 | 34 |
+| Spoken language feels more natural than typing | 22 | 37 | 60 |
+| It's fun | 23 | 39 | 0 |
+| Lets me juse the device without my hands | 55 | 28 | 83 |",,,,,,,
+train-62946309004899-1832,owid,line,visual_reference,Is the energy intensity for Industry sector highest in 2002?,"{""answer"": ""Yes"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Industry (all columns)""], ""rationale"": ""Industry's values are 0.52, 1.10, 0.64 and 1.48; the highest, 1.48, is in 2002.""}","Source: OWID
+Chart type: line, 4 series
+Title: Energy intensity by sector, Dominica, 1990 to 2002
+Category axis: Entity
+Series: Primary energy (colour: purple) | Final energy (colour: dark teal) | Industry (colour: red) | Services (colour: dark blue)
+Table columns: 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002
+Table:
+| Entity | 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 |
+|---|---|---|---|---|---|---|---|
+| Final energy | 1.100808923 | 0.988833104 | 1.316277592 | 1.085240968 | 2.077010091 | 2.946660232 | 2.664340189 |
+| Primary energy | 2.175045619 | 2.123730305 | 2.428795956 | 2.58409414 | 2.564713886 | 3.412150737 | 3.575652805 |
+| Industry | 0.51538021 | nan | nan | nan | 1.100631617 | 0.637787451 | 1.480091561 |
+| Services | 0.016526382 | 0.015803377 | 0.014662739 | 0.014013611 | 0.013282943 | 0.014210347 | 0.013655107 |",,,,,,,
+train-64930712000708-1505,owid,h_bar,arithmetic_comparison,What is the sum of the average and the median of the road incident death rates of all the age groups?,"{""answer"": 24.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Road incident death rates by age, Italy, 2004 (all rows)""], ""rationale"": ""Sum is 89.52, so average is 89.52 / 7 = 12.79; median is 11.72; 12.79 + 11.72 = 24.51, about 24.5.""}","Source: OWID
+Chart type: horizontal bar
+Title: Road incident death rates by age, Italy, 2004
+Category axis: Country
+Series: Road incident death rates by age, Italy, 2004
+Bar colours: 70+ years old = dark green; All ages = red; 15-49 years old = purple; Age-standardized = dark teal; 50-69 years old = pink; 5-14 years old = red; Under-5s = dark blue
+Table:
+| Country | Road incident death rates by age, Italy, 2004 |
+|---|---|
+| 70+ years old | 35.73 |
+| All ages | 14.4 |
+| 15-49 years old | 14.28 |
+| Age-standardized | 11.72 |
+| 50-69 years old | 9.84 |
+| 5-14 years old | 1.95 |
+| Under-5s | 1.6 |",,,,,,,
+train-65999070000142-1510,owid,h_bar,visual_reference,What is the value of smallest bar?,"{""answer"": 1.4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Infant mortality rates in England and Wales, 2009 (all rows)""], ""rationale"": ""The smallest bar is Postneonatal at 1.4.""}","Source: OWID
+Chart type: horizontal bar
+Title: Infant mortality rates in England and Wales, 2009
+Category axis: Country
+Series: Infant mortality rates in England and Wales, 2009
+Bar colours: Perinatal (stillbirths & less than 7 days) = red; Infant (less than 1 year) = black; Neonatal (less than 28 days) = blue; Postneonatal (28 days to 1 year) = teal
+Table:
+| Country | Infant mortality rates in England and Wales, 2009 |
+|---|---|
+| Perinatal (stillbirths & less than 7 days) | 7.6 |
+| Infant (less than 1 year) | 4.5 |
+| Neonatal (less than 28 days) | 3.1 |
+| Postneonatal (28 days to 1 year) | 1.4 |",,,,,,,
+train-75043966002661-1543,owid,h_bar,arithmetic_comparison,What is the average of all the incomes? (in dollars),"{""answer"": 3200.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=World Bank income thresholds (GNI per capita in US$), World, 1993 (all rows)""], ""rationale"": ""(8625 + 2786 + 696 + 695) / 4 = 12802 / 4 = 3200.5.""}","Source: OWID
+Chart type: horizontal bar
+Title: World Bank income thresholds (GNI per capita in US$), World, 1993
+Category axis: Country
+Series: World Bank income thresholds (GNI per capita in US$), World, 1993
+Bar colours: High income (World Bank 2017) = purple; Upper middle income (World Bank 2017) = dark teal; Lower middle income (World Bank 2017) = red; Low income (World Bank 2017) = dark blue
+Table:
+| Country | World Bank income thresholds (GNI per capita in US$), World, 1993 |
+|---|---|
+| High income (World Bank 2017) | 8625 |
+| Upper middle income (World Bank 2017) | 2786 |
+| Lower middle income (World Bank 2017) | 696 |
+| Low income (World Bank 2017) | 695 |",,,,,,,
+train-7574-2778,pew,h_bar,visual_reference,What's the value of the Elected officials bar?,"{""answer"": 25, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Elected officials, Col=Values (25)""], ""rationale"": ""The Elected officials bar shows 25.""}","Source: Pew
+Chart type: horizontal bar
+Title: Most Americans say medical scientists should have a major policy role on vaccine issues % of U.S. adults who say, in making decisions about policy issues related to should have a major role _ childhood vaccines
+Category axis: Entity
+Series: UNK (single series)
+Table:
+| Entity | Values |
+|---|---|
+| Elected officials | 25 |
+| Health insurance leaders company | 26 |
+| Pharmaceutical industryleaders | nan |
+| The general public | The general public |
+| Medical scientists | 73 |",,,,,,,
+train-76053860006481-1890,owid,line,visual_reference,Which color does the place Norway represent?,"{""answer"": ""dark blue"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Norway = dark blue""], ""rationale"": ""The series list shows Norway in dark blue.""}","Source: OWID
+Chart type: line, 2 series
+Title: Death rate due to road traffic injuries, 2000 to 2013
+Category axis: Entity
+Series: Ghana (colour: red) | Norway (colour: dark blue)
+Table columns: 2000 | 2002 | 2004 | 2006 | 2008 | 2010 | 2012 | 2013
+Table:
+| Entity | 2000 | 2002 | 2004 | 2006 | 2008 | 2010 | 2012 | 2013 |
+|---|---|---|---|---|---|---|---|---|
+| Ghana | 27.7 | 27.9 | 28.0 | 27.8 | 27.8 | 27.6 | 26.3 | 26.2 |
+| Norway | 8.1 | 7.4 | 6.3 | 5.2 | 5.5 | 4.3 | 3.0 | 3.8 |",,,,,,,
+train-7629-196,pew,line,visual_reference,Which line always has the lesser value?,"{""answer"": ""red"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Republican/Lean Rep = red"", ""Col=Republican/Lean Rep (all rows)"", ""Col=Democrat/Lean Dem (all rows)""], ""rationale"": ""Republican (red) is below Democrat in every year with data, e.g. 48 vs 73, 24 vs 68, 45 vs 81.""}","Source: Pew
+Chart type: line, 2 series
+Title: Large divide between Republicans and Democrats over energy priorities % of U.S. adults who say alternative sources should be the more important priority for addressing America's energy supply
+Category axis: Year
+Series: Democrat/Lean Dem (colour: blue) | Republican/Lean Rep (colour: red)
+Table:
+| Year | Republican/Lean Rep | Democrat/Lean Dem |
+|---|---|---|
+| 2011 | 48 | 73 |
+| 2012 | 0 | 0 |
+| 2013 | 24 | 68 |
+| 2014 | 43 | 80 |
+| 2015 | 43 | 775 |
+| 2016 | 0 | 0 |
+| 2017 | 45 | 81 |",,,,,,,
+train-7629-197,pew,line,arithmetic_comparison,Which year showed the smallest difference in opinion between the two groups?,"{""answer"": 2011, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2011, Col=Republican/Lean Rep (48)"", ""Row=2011, Col=Democrat/Lean Dem (73)"", ""Row=2013, Col=Republican/Lean Rep (24)"", ""Row=2017, Col=Democrat/Lean Dem (81)""], ""rationale"": ""Gaps: 2011 73 - 48 = 25, 2013 44, 2014 37, 2017 36 (zero rows missing); 2011 has the smallest gap.""}","Source: Pew
+Chart type: line, 2 series
+Title: Large divide between Republicans and Democrats over energy priorities % of U.S. adults who say alternative sources should be the more important priority for addressing America's energy supply
+Category axis: Year
+Series: Democrat/Lean Dem (colour: blue) | Republican/Lean Rep (colour: red)
+Table:
+| Year | Republican/Lean Rep | Democrat/Lean Dem |
+|---|---|---|
+| 2011 | 48 | 73 |
+| 2012 | 0 | 0 |
+| 2013 | 24 | 68 |
+| 2014 | 43 | 80 |
+| 2015 | 43 | 775 |
+| 2016 | 0 | 0 |
+| 2017 | 45 | 81 |",,,,,,,
+train-78467828000410-1565,owid,h_bar,arithmetic_comparison,Is the sum of smallest two bar is half the the value of largest bar?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Chad (all columns)"", ""Row=Ireland (all columns)"", ""Row=Malaysia (all columns)""], ""rationale"": ""1640 + 441 = 2081, while half of 5243 is 2621.5; not equal, so no.""}","Source: OWID
+Chart type: horizontal bar
+Title: Road traffic deaths, 2000
+Category axis: Country
+Series: Road traffic deaths, 2000
+Bar colours: Malaysia = dark teal; Chad = red; Ireland = dark blue
+Table:
+| Country | Road traffic deaths, 2000 |
+|---|---|
+| Malaysia | 5243 |
+| Chad | 1640 |
+| Ireland | 441 |",,,,,,,
+train-7873-202,pew,line,visual_reference,Is the starting value of light brown graph 40?,"{""answer"": ""Yes"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Colour: Approve = light brown"", ""Row=2010, Col=Approve (40)""], ""rationale"": ""Approve is light brown and its first value (2010) is 40, so yes.""}","Source: Pew
+Chart type: line, 2 series
+Title: Americans remain divided over health care law ahead of Trump's presidency % saying they _ of the 2010 law
+Category axis: Year
+Series: Disapprove (colour: dark brown) | Approve (colour: light brown)
+Table:
+| Year | Disapprove | Approve |
+|---|---|---|
+| 2010 | 0 | 40 |
+| 2011 | 0 | 0 |
+| 2012 | 0 | 0 |
+| 2013 | 0 | 0 |
+| 2014 | 55 | 0 |
+| 2015 | 0 | 0 |
+| 2016 | 0 | 0 |
+| 2017 | 0 | 0 |",,,,,,,
+train-7897-966,pew,h_bar,visual_reference,What color does value 32 shows?,"{""answer"": ""Green"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Not too well/Not at all well = green"", ""Row=Clima te scie nnists understand causes of climate change, Col=Not too well/Not at all well (32)""], ""rationale"": ""32 is the Not too well/Not at all well value, which is coloured green.""}","Source: Pew
+Chart type: horizontal bar, 3 series
+Title: Americans see limited scientific understanding of climate change, GM foods % of U.S. adults who say the following .
+Category axis: Entity
+Series: Very well (colour: dark blue) | Fairly well (colour: light blue) | Not too well/Not at all well (colour: green)
+Table:
+| Entity | Very well | Fairly well | Not too well/Not at all well |
+|---|---|---|---|
+| Scientists health understand effects OFGM foods | 19 | 44 | 35 |
+| Clima te scie nnists understand causes of climate change | 28 | 40 | 32 |",,,,,,,
+train-79649027000353-1566,owid,h_bar,arithmetic_comparison,How many colors are there in the graph?,"{""answer"": 4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: 16 to 24 years = purple"", ""Colour: 25 to 34 years = dark teal"", ""Colour: 35 to 44 years = red"", ""Colour: 45 to 54 years = dark blue""], ""rationale"": ""The bars use purple, dark teal, red and dark blue: 4 colours.""}","Source: OWID
+Chart type: horizontal bar
+Title: Ratio of female-to-male median earnings by age, US, 1979
+Category axis: Country
+Series: Ratio of female-to-male median earnings by age, US, 1979
+Bar colours: 16 to 24 years = purple; 25 to 34 years = dark teal; 35 to 44 years = red; 45 to 54 years = dark blue
+Table:
+| Country | Ratio of female-to-male median earnings by age, US, 1979 |
+|---|---|
+| 16 to 24 years | 78.5 |
+| 25 to 34 years | 67.4 |
+| 35 to 44 years | 58.3 |
+| 45 to 54 years | 56.9 |",,,,,,,
+train-810-2150,pew,h_bar,arithmetic_comparison,How many types of bars are used to represent the graph?,"{""answer"": 4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=U.S. born (all columns)""], ""rationale"": ""Each row has four bar types: Less than high school, High school graduate, Some college and Bachelor's or more, so 4.""}","Source: Pew
+Chart type: horizontal bar, 4 series
+Title: Educational attainment among U.S. immigrants, 2018 % among those ages 25 and older
+Category axis: Entity
+Series: Less than high school | High school graduate | Some college | Bachelor's or more
+Table:
+| Entity | Less than high school | High school graduate | Some college | Bachelor's or more |
+|---|---|---|---|---|
+| Sub- Saharan Africa | 12.0 | 20.0 | 27 | 40 |
+| North Africa | 12.0 | 19.0 | 19 | 50 |
+| Middle East | 12.0 | 19.0 | 19 | 50 |
+| South America | 14.0 | 27.0 | 25 | 34 |
+| Central America | 47.0 | 26.0 | 17 | 11 |
+| Caribbean | 23.0 | 30.0 | 25 | 22 |
+| Other North America | nan | 17.0 | 26 | 50 |
+| Europe | 11.0 | 22.0 | 23 | 44 |
+| Oceania | 13.0 | 25.0 | 26 | 37 |
+| South Asia | 10.0 | nan | 10 | 71 |
+| Central Asia | 5.0 | 16.0 | 22 | 57 |
+| Southeast Asia | 16.0 | 18.0 | 20 | 46 |
+| East and | 16.0 | 18.0 | 20 | 46 |
+| Mexico | 54.0 | 26.0 | 13 | 0 |
+| Foreign born birthplace: | 0.0 | 0.0 | 0 | 0 |
+| Foreign born | 27.0 | 22.0 | 19 | 32 |
+| U.S. born | 8.0 | 28.0 | 31 | 33 |",,,,,,,
+train-8221-2801,pew,h_bar,arithmetic_comparison,What is the ratio between very and somewhat important among Clinton supporters?,"{""answer"": 2.515972222, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Clinton sup porters, Col=Very (60)"", ""Row=Clinton sup porters, Col=Somewhat (23)""], ""rationale"": ""Clinton supporters: Very 60, Somewhat 23; 60 / 23 = 2.61, close to 2.52.""}","Source: Pew
+Chart type: horizontal bar, 4 series
+Title: Most say it is important for losing candidate to publicly concede % who say it is__ importantfor the losing presidentia candidate to publicly acknowledge the winner as the legitimate president of the country
+Category axis: Entity
+Series: Very | Somewhat | Not too/Notatall | DK
+Table:
+| Entity | Very | Somewhat | Not too/Notatall | DK |
+|---|---|---|---|---|
+| Johnson/Stein supporters | 35 | 24 | nan | 0 |
+| Clinton sup porters | 60 | 23 | 16.0 | 0 |
+| Trump supporters | 51 | 27 | 21.0 | 0 |
+| All voters | 53 | 24 | 22.0 | 0 |",,,,,,,
+train-85924056007438-1923,owid,line,arithmetic_comparison,When does the gap between Egypt and Fiji become the largest?,"{""answer"": 2011, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Egypt (all columns)"", ""Row=Fiji (all columns)""], ""rationale"": ""Egypt minus Fiji: 2010 12.4, 2011 23.2, 2012 16.0; the largest gap is in 2011.""}","Source: OWID
+Chart type: line, 4 series
+Title: Direct economic loss attributed to disasters, 2005 to 2012
+Category axis: Entity
+Series: Egypt (colour: red) | Fiji (colour: pink) | Palau (colour: purple) | El Salvador (colour: dark teal)
+Table columns: 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012
+Table:
+| Entity | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 |
+|---|---|---|---|---|---|---|---|---|
+| Egypt | 0.13627537 | nan | nan | nan | nan | 11.0613 | 24.3324 | 134.9342 |
+| Fiji | nan | 0.0939375 | 0.07605 | 1.3005 | 22.0831875 | 23.490834 | 1.163457 | 118.9016404 |
+| Palau | nan | nan | nan | nan | nan | nan | nan | 5.639745 |
+| El Salvador | 41.52195733 | 46.07604788 | 32.91514787 | 64.97292811 | 59.70854442 | 55.87336263 | 104.2767662 | 3.06337388 |",,,,,,,
+train-9120-2921,pew,h_bar,arithmetic_comparison,How many bars have a value equals to 55?,"{""answer"": 2, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Most or all (all rows)"", ""Col=Some or none (all rows)"", ""Row=Suburban, Col=Most or all (55.0)"", ""Row=$30K-$ 75K, Col=Most or all (55.0)""], ""rationale"": ""Only Suburban and $30K-$75K have bars equal to 55 (both Most or all), so 2.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Whites, seniors, wealthy among those most likely to trust their neighbors % who trust_ of their neighbors
+Category axis: Entity
+Series: Some or none (colour: light brown) | Most or all (colour: dark brown)
+Table:
+| Entity | Some or none | Most or all |
+|---|---|---|
+| Urban | 54 | 46.0 |
+| Suburban | 45 | 55.0 |
+| Rural | 40 | 59.0 |
+| HS or less | 57 | 43.0 |
+| Some college | 48 | nan |
+| College+ | 34 | 66.0 |
+| $30K | 63 | nan |
+| $30K-$ 75K | 45 | 55.0 |
+| $75K+ | 33 | nan |
+| 18-29 | 61 | 39.0 |
+| 3049 | 49 | 50.0 |
+| 5064 | 46 | 54.0 |
+| Ages 65+ | 26 | 73.0 |
+| Hispanic | 72 | 27.0 |
+| Black | 68 | 31.0 |
+| White | 38 | nan |
+| TOTAL | 48 | 52.0 |",,,,,,,
+train-94597296004338-3421,owid,h_bar,arithmetic_comparison,Is the median value larger than the average value?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Col=Causes of death in children under five years old, Timor, 1990 (all rows)""], ""rationale"": ""Sixteen values: median = (119 + 77) / 2 = 98; sum 3937.33 / 16 = 246.1 average. 98 is not larger, so no.""}","Source: OWID
+Chart type: horizontal bar
+Title: Causes of death in children under five years old, Timor, 1990
+Category axis: Country
+Series: Causes of death in children under five years old, Timor, 1990
+Bar colours: Lower respiratory infections = dark green; Preterm birth complications = red; Diarrheal diseases = pink; Measles = red; Congenital birth defects = orange; Birth asphyxia and trauma = blue; Nutritional deficiencies = pink; Meningitis = blue; Whooping cough = red; Tuberculosis = purple; Other neonatal disorders = teal; Neonatal sepsis & infections = orange; Drowning = dark green; Cancers = dark teal; HIV/AIDS = red; Malaria = dark blue
+Table:
+| Country | Causes of death in children under five years old, Timor, 1990 |
+|---|---|
+| Lower respiratory infections | 1305.0 |
+| Preterm birth complications | 531.0 |
+| Diarrheal diseases | 490.0 |
+| Measles | 355.0 |
+| Congenital birth defects | 278.0 |
+| Birth asphyxia and trauma | 251.0 |
+| Nutritional deficiencies | 222.33 |
+| Meningitis | 119.0 |
+| Whooping cough | 77.0 |
+| Tuberculosis | 76.0 |
+| Other neonatal disorders | 70.0 |
+| Neonatal sepsis & infections | 64.0 |
+| Drowning | 64.0 |
+| Cancers | 18.0 |
+| HIV/AIDS | 11.0 |
+| Malaria | 6.0 |",,,,,,,
+train-9649-2986,pew,h_bar,visual_reference,Which bar has the shortest green length?,"{""answer"": ""Rising prices"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Approve = green"", ""Col=Approve (all rows)"", ""Row=Rising prices, Col=Approve (11.0)""], ""rationale"": ""Among the shown green Approve values, Rising prices at 11.0 is the smallest.""}","Source: Pew
+Chart type: horizontal bar, 2 series
+Title: Majorities disapprove of Maduro's handling of domestic and foreign issues Do you_ of the way President Madurois handling .
+Category axis: Entity
+Series: Disapprove (colour: orange) | Approve (colour: green)
+Table:
+| Entity | Disapprove | Approve |
+|---|---|---|
+| Rela tions wf Cuba | 63.0 | 33.0 |
+| Energy policy | 72.0 | 22.0 |
+| Rela tions w/ U.S | 76.0 | nan |
+| Dealing wf political opposition | nan | 20.0 |
+| Unemployment | 80.0 | 19.0 |
+| Corruption | 83.0 | 13.0 |
+| Crime | 85.0 | nan |
+| Rising prices | 86.0 | 11.0 |",,,,,,,
+train-96980063004401-1950,owid,line,visual_reference,The line graph represents which country?,"{""answer"": ""Singapore"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Singapore = dark blue"", ""Row=Singapore (all columns)""], ""rationale"": ""The single line's series and only table row is Singapore.""}","Source: OWID
+Chart type: line
+Title: Education spending as a share of total government expenditure
+Category axis: Entity
+Series: Singapore (colour: dark blue; single series, all points share this colour)
+Table columns: 2000 | 2002 | 2004 | 2006 | 2008 | 2010 | 2012 | 2013
+Table:
+| Entity | 2000 | 2002 | 2004 | 2006 | 2008 | 2010 | 2012 | 2013 |
+|---|---|---|---|---|---|---|---|---|
+| Singapore | 18.2845993041992 | 18.1828804016113 | 20.3052005767822 | 19.7493190765381 | 19.9428596496582 | 17.1686305999756 | 21.1614303588867 | 19.9586601257324 |",,,,,,,
+train-OECD_EMPLOYEES_BY_BUSINESS_SIZE_CHL_COL_GRC_MEX_NLD_000001-3039,oecd,v_bar,arithmetic_comparison,What's the average of both countries?,"{""answer"": 58.05, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Greece, Col=Employees by business size (49.9)"", ""Row=Netherlands, Col=Employees by business size (66.2)""], ""rationale"": ""(49.9 + 66.2) / 2 = 58.05.""}","Source: OECD
+Chart type: vertical bar
+Title: Employees by business size
+Category axis: Country
+Series: Employees by business size
+Bar colours: Greece = red; Netherlands = blue
+Table:
+| Country | Employees by business size |
+|---|---|
+| Greece | 49.9 |
+| Netherlands | 66.2 |",,,,,,,
+train-OECD_FINANCIAL_DISINCENTIVE_TO_INCREASE_WORKING_HOURS_CHL_FIN_ISL_ROU_000016-3048,oecd,v_bar,visual_reference,What is the color of longest bar?,"{""answer"": ""Red"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Iceland = red"", ""Row=Iceland, Col=Financial disincentive to increase working hours (48.0)"", ""Row=Finland, Col=Financial disincentive to increase working hours (42.0)""], ""rationale"": ""Iceland's 48.0 bar is longest and it is red.""}","Source: OECD
+Chart type: vertical bar
+Title: Financial disincentive to increase working hours
+Category axis: Country
+Series: Financial disincentive to increase working hours
+Bar colours: Finland = blue; Iceland = red
+Table:
+| Country | Financial disincentive to increase working hours |
+|---|---|
+| Finland | 42.0 |
+| Iceland | 48.0 |",,,,,,,
+train-OECD_FINANCIAL_DISINCENTIVE_TO_INCREASE_WORKING_HOURS_CHL_FIN_ISL_ROU_000016-3049,oecd,v_bar,arithmetic_comparison,What is the difference of two bars?,"{""answer"": 6, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Iceland, Col=Financial disincentive to increase working hours (48.0)"", ""Row=Finland, Col=Financial disincentive to increase working hours (42.0)""], ""rationale"": ""48 - 42 = 6.""}","Source: OECD
+Chart type: vertical bar
+Title: Financial disincentive to increase working hours
+Category axis: Country
+Series: Financial disincentive to increase working hours
+Bar colours: Finland = blue; Iceland = red
+Table:
+| Country | Financial disincentive to increase working hours |
+|---|---|
+| Finland | 42.0 |
+| Iceland | 48.0 |",,,,,,,
+train-OECD_PENSION_SPENDING_CRI_DEU_EGY_000004-3132,oecd,v_bar,visual_reference,From two place Costa Rica and Germany which has the highest value of Pension spenders?,"{""answer"": ""Germany"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Costa Rica, Col=Pension spending (3.5)"", ""Row=Germany, Col=Pension spending (10.1)""], ""rationale"": ""Germany 10.1 is higher than Costa Rica 3.5.""}","Source: OECD
+Chart type: vertical bar
+Title: Pension spending
+Category axis: Country
+Series: Pension spending
+Bar colours: Costa Rica = red; Germany = blue
+Table:
+| Country | Pension spending |
+|---|---|
+| Costa Rica | 3.5 |
+| Germany | 10.1 |",,,,,,,
+train-OECD_UNEMPLOYMENT_RATE_FORECAST_BEL_FRA_JPN_SVN_ZAF_000081-3565,oecd,line,arithmetic_comparison,How many countries have more than 5 % unemployment rate over the years?,"{""answer"": 4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Belgium (all columns)"", ""Row=France (all columns)"", ""Row=Japan (all columns)"", ""Row=Slovenia (all columns)"", ""Row=South Africa (all columns)""], ""rationale"": ""Belgium, France, Slovenia and South Africa stay above 5 throughout; Japan is mostly below 5 (2.1 to 4.7, only 5.36 in 2002). So 4 countries.""}","Source: OECD
+Chart type: line, 5 series
+Title: Unemployment rate forecast
+Category axis: Country
+Series: Belgium (colour: pink) | France (colour: red) | Japan (colour: red) | Slovenia (colour: blue) | South Africa (colour: green)
+Table columns: 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 | 2004
+Table:
+| Country | 1990 | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 | 2004 |
+|---|---|---|---|---|---|---|---|---|
+| Belgium | 6.55826721730429 | 7.09202028064157 | 9.75001091262263 | 9.55046866351063 | 9.34119674203131 | 6.85780440765975 | 7.52562293976155 | 8.38539642964489 |
+| France | 7.91776004759074 | 8.97279930567038 | 10.5922546046031 | 10.4882746647306 | 10.2495309235651 | 8.54428461636833 | 7.90116990577315 | 8.85048771143465 |
+| Japan | 2.10182767624021 | 2.16234703959869 | 2.886665161889 | 3.35497969877199 | 4.10481635056555 | 4.73081991846387 | 5.35678692445685 | 4.71709948563542 |
+| Slovenia | nan | nan | nan | 6.96710204026249 | 7.4572112940928 | 6.79256372779497 | 6.36909799844119 | 6.34983079264091 |
+| South Africa | nan | nan | nan | nan | nan | nan | 27.0507987278823 | 24.0967225110185 |",,,,,,,
+train-multi_col_100066-7134,statista,line,retrieval,"What is female adult mortality rate in 2016 (per 1,000 adults)?","{""answer"": 108.92, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2016, Col=female (108.92)""], ""rationale"": ""The female value for 2016 is 108.92.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: female (colour: blue) | male (colour: dark blue)
+Table:
+| Characteristic | female | male |
+|---|---|---|
+| 2019 | 104.04 | 181.02 |
+| 2018 | 105.46 | 182.7 |
+| 2017 | 106.83 | 184.42 |
+| 2016 | 108.92 | 186.23 |
+| 2015 | 111.02 | 188.04 |
+| 2014 | 113.11 | 189.85 |
+| 2013 | 115.21 | 191.66 |
+| 2012 | 117.3 | 193.47 |
+| 2011 | 119.75 | 195.89 |
+| 2010 | 122.2 | 198.32 |
+| 2009 | 124.65 | 200.75 |",,,,,,,
+train-multi_col_100180-7168,statista,v_bar,visual_reference,"In the chart, A blue bar value is 434 and women value is 568, find that category?","{""answer"": ""Northern Ireland"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Northern Ireland, Col=Men (434)"", ""Row=Northern Ireland, Col=Women (568)"", ""Colour: Men = blue""], ""rationale"": ""Men is the blue series; Men 434 and Women 568 belong to Northern Ireland.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Men (colour: blue) | Women (colour: dark blue)
+Table:
+| Characteristic | Men | Women |
+|---|---|---|
+| England and Wales | 13877 | 18750 |
+| Scotland | 1712 | 2430 |
+| Northern Ireland | 434 | 568 |",,,,,,,
+train-multi_col_100257-7195,statista,v_bar,arithmetic_comparison,"What is the average of patients who received treatments, in total?","{""answer"": 36.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Biologics (all columns)"", ""Row=Surgical procedures (all columns)""], ""rationale"": ""(46 + 25 + 58 + 17) / 4 = 146 / 4 = 36.5.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Crohn's disease patients (colour: blue) | Ulerative colitis patients (colour: dark blue)
+Table:
+| Characteristic | Crohn's disease patients | Ulerative colitis patients |
+|---|---|---|
+| Biologics | 46% | 25% |
+| Surgical procedures | 58% | 17% |",,,,,,,
+train-multi_col_100497-5536,statista,v_bar,retrieval,Find out 2016 Luxury data?,"{""answer"": 69, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2016, Col=Luxury (69%)""], ""rationale"": ""Luxury in 2016 is 69%.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Year
+Series: Luxury (colour: blue) | Sports & lifestyle (colour: dark blue)
+Table:
+| Year | Luxury | Sports & lifestyle |
+|---|---|---|
+| 2017 | 71% | 29% |
+| 2016 | 69% | 31% |
+| 2015 | 68% | 32% |
+| 2014 | 66% | 34% |
+| 2013 | 67% | 33% |
+| 2012 | 64% | 36% |",,,,,,,
+train-multi_col_100655-5560,statista,line,visual_reference,When did all India peak?,"{""answer"": ""June 2020"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=All India (all rows)""], ""rationale"": ""All India peaks at 149.6 in June 2020, above 149.0 in July 2020.""}","Source: Statista
+Chart type: line, 3 series
+Category axis: Characteristic
+Series: Rural (colour: blue) | Urban (colour: dark blue) | All India (colour: light grey)
+Table:
+| Characteristic | Rural | Urban | All India |
+|---|---|---|---|
+| July 2020 | 147.8 | 151.6 | 149.0 |
+| June 2020 | 148.2 | 152.7 | 149.6 |
+| April  2020 | 147.2 | 151.8 | 148.7 |
+| March  2020 | 144.4 | 146.5 | 145.1 |
+| February  2020 | 144.2 | 146.2 | 144.8 |
+| January  2020 | 143.7 | 145.6 | 144.3 |
+| December 2019 | 142.8 | 144.9 | 143.5 |
+| November 2019 | 141.8 | 144.1 | 142.5 |
+| October  2019 | 141.0 | 143.5 | 141.8 |
+| September  2019 | 140.1 | 142.7 | 140.9 |
+| August  2019 | 139.2 | 142.1 | 140.1 |
+| July 2019 | 138.4 | 141.4 | 139.3 |",,,,,,,
+train-multi_col_100919-5646,statista,line,retrieval,What is the life expectancy at birth in Croatia for a male in the year 2015?,"{""answer"": 74.3, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2015, Col=male (74.3)""], ""rationale"": ""Male in 2015 is 74.3.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: female (colour: blue) | male (colour: dark blue)
+Table:
+| Characteristic | female | male |
+|---|---|---|
+| 2019 | 81.6 | 75.4 |
+| 2018 | 81.4 | 74.9 |
+| 2017 | 80.9 | 74.9 |
+| 2016 | 81.3 | 74.9 |
+| 2015 | 80.4 | 74.3 |
+| 2014 | 80.5 | 74.6 |
+| 2013 | 80.2 | 74.2 |
+| 2012 | 80.1 | 73.9 |
+| 2011 | 79.9 | 73.8 |
+| 2010 | 79.6 | 73.5 |
+| 2009 | 79.6 | 72.9 |",,,,,,,
+train-multi_col_100988-5680,statista,v_bar,visual_reference,What is the blue bar denotes ?,"{""answer"": ""Handheld consoles"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Handheld consoles = blue""], ""rationale"": ""The blue series is Handheld consoles.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Handheld consoles (colour: blue) | Home consoles (colour: dark blue)
+Table:
+| Characteristic | Handheld consoles | Home consoles |
+|---|---|---|
+| 2017 | 15% | 85% |
+| 2016 | 33% | 67% |
+| 2015 | 17% | 83% |
+| 2014 | 19% | 81% |",,,,,,,
+train-multi_col_101085-5714,statista,v_bar,retrieval,What's the most popular sector for fathers?,"{""answer"": ""90,000 or more"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Fathers (all rows)""], ""rationale"": ""Fathers are highest at 94% in 90,000 or more.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Household income in U.S. dollars
+Series: Mothers (colour: blue) | Fathers (colour: dark blue)
+Table:
+| Household income in U.S. dollars | Mothers | Fathers |
+|---|---|---|
+| 90,000 or more | 77% | 94% |
+| 60,000 to 89,999 | 76% | 91% |
+| 24,999 to 59,999 | 67% | 85% |
+| Less than 24,000 | 45% | 64% |",,,,,,,
+train-multi_col_1265-5818,statista,v_bar,visual_reference,Which year recorded the highest market share in Jumbo over the years?,"{""answer"": 2018, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Jumbo (all rows)""], ""rationale"": ""Jumbo peaks at 24% in 2018.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Albert Heijn (colour: blue) | Jumbo (colour: dark blue) | Picnic* (colour: light grey)
+Table:
+| Characteristic | Albert Heijn | Jumbo | Picnic* |
+|---|---|---|---|
+| 2015 | 47% | 8% | 5% |
+| 2016 | 59% | 14% | 5% |
+| 2017 | 58% | 22% | 10% |
+| 2018 | 53% | 24% | 16% |
+| 2019 | 32% | 18% | 23% |
+| 2020 | 28% | 15% | 18% |",,,,,,,
+train-multi_col_1273-5825,statista,v_bar,arithmetic_comparison,What is the difference between maximum sales in Korea over the years to the minimum sales in Asia over the years?,"{""answer"": 13.54, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2017, Col=Korea (19.05)"", ""Row=2014, Col=Asia (5.51)""], ""rationale"": ""Korea maximum 19.05 (2017) minus Asia minimum 5.51 (2014) = 13.54.""}","Source: Statista
+Chart type: vertical bar, 8 series
+Category axis: Characteristic
+Series: Korea (colour: blue) | China (colour: dark blue) | Asia (colour: light grey) | Europe (colour: red) | North America (colour: green) | South America (colour: yellow) | Middle East & Africa (colour: purple) | Others (colour: purple)
+Table:
+| Characteristic | Korea | China | Asia | Europe | North America | South America | Middle East & Africa | Others |
+|---|---|---|---|---|---|---|---|---|
+| 2017 | 19.05 | 2.39 | 6.13 | 5.92 | 15.55 | 4.16 | 2.93 | 1.58 |
+| 2016 | 13.72 | 2.6 | 6.0 | 5.52 | 15.59 | 3.66 | 3.44 | 1.51 |
+| 2015 | 13.45 | 3.06 | 5.53 | 5.47 | 15.41 | 4.04 | 4.42 | 1.73 |
+| 2014 | 13.81 | 3.31 | 5.51 | 6.14 | 13.94 | 5.43 | 4.3 | 3.06 |
+| 2013 | 13.48 | 3.46 | 5.52 | 5.96 | 12.03 | 5.51 | 3.95 | 3.45 |",,,,,,,
+train-multi_col_1365-5862,statista,line,retrieval,Which region had maximum population living in urban areas in the year 1990,"{""answer"": ""Asia"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=1990 (all columns)""], ""rationale"": ""In 1990 Asia has 1039.59, the largest value, ahead of Europe 504.67.""}","Source: Statista
+Chart type: line, 6 series
+Category axis: Characteristic
+Series: Africa (colour: blue) | Asia (colour: dark blue) | Europe (colour: light grey) | Latin America and Caribbean (colour: red) | Northern America (colour: green) | Oceania (colour: yellow)
+Table:
+| Characteristic | Africa | Asia | Europe | Latin America and Caribbean | Northern America | Oceania |
+|---|---|---|---|---|---|---|
+| 1950 | 32.66 | 246.19 | 284.09 | 69.76 | 110.3 | 7.91 |
+| 1970 | 82.64 | 507.09 | 415.02 | 165.06 | 170.58 | 13.83 |
+| 1990 | 200.11 | 1039.59 | 504.67 | 315.34 | 211.48 | 19.04 |
+| 2015 | 491.53 | 2119.87 | 547.15 | 505.39 | 290.62 | 26.94 |
+| 2030* | 824.01 | 2808.26 | 572.56 | 600.48 | 334.78 | 32.83 |
+| 2050* | 1488.92 | 3479.06 | 598.86 | 685.07 | 386.69 | 41.16 |",,,,,,,
+train-multi_col_1407-5885,statista,v_bar,arithmetic_comparison,What is the difference between  beer consumed in 2015 and beer consumed in 2010?,"{""answer"": 0.47, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2015/16, Col=Beer* (7.27)"", ""Row=2010/11, Col=Beer* (6.8)""], ""rationale"": ""Beer 2015/16 7.27 minus 2010/11 6.8 = 0.47.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Beer* (colour: blue) | Soft drink** (colour: dark blue) | Hot dog (colour: light grey)
+Table:
+| Characteristic | Beer* | Soft drink** | Hot dog |
+|---|---|---|---|
+| 2015/16 | 7.27 | 4.36 | 5.43 |
+| 2014/15 | 6.47 | 3.57 | 4.84 |
+| 2013/14 | 6.98 | 3.85 | 5.2 |
+| 2012/13 | 7.29 | 4.37 | 5.44 |
+| 2011/12 | 7.21 | 3.98 | 5.39 |
+| 2010/11 | 6.8 | 4.33 | 5.1 |",,,,,,,
+train-multi_col_20018-5988,statista,v_bar,arithmetic_comparison,The shortest light blue bar minus the tallest grey bar yields what value?,"{""answer"": 137.61, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Program Services = blue"", ""Colour: Supporting Services = light grey"", ""Col=Program Services (all rows)"", ""Col=Supporting Services (all rows)""], ""rationale"": ""Shortest blue Program Services is 217.01; tallest grey Supporting Services is 79.4; 217.01 - 79.4 = 137.61.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Program Services (colour: blue) | Auxiliary Activities (colour: dark blue) | Supporting Services (colour: light grey)
+Table:
+| Characteristic | Program Services | Auxiliary Activities | Supporting Services |
+|---|---|---|---|
+| 2020 | 217.01 | 71.74 | 70.61 |
+| 2019 | 222.9 | 84.83 | 78.46 |
+| 2018 | 226.87 | 86.72 | 79.4 |",,,,,,,
+train-multi_col_20046-5998,statista,v_bar,visual_reference,What's the highest number of countries where YUM! Brands operates worldwide in 2010?,"{""answer"": 110, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2010 (all columns)""], ""rationale"": ""In 2010 the highest is Kentucky Fried Chicken with 110.""}","Source: Statista
+Chart type: vertical bar, 4 series
+Category axis: Characteristic
+Series: Kentucky Fried Chicken (colour: blue) | Pizza Hut (colour: dark blue) | Taco Bell (colour: light grey) | Habit Burger Grill* (colour: red)
+Table:
+| Characteristic | Kentucky Fried Chicken | Pizza Hut | Taco Bell | Habit Burger Grill* |
+|---|---|---|---|---|
+| 2020 | 146 | 110 | 31 | 3 |
+| 2019 | 144 | 113 | 30 | - |
+| 2018 | 136 | 111 | 27 | - |
+| 2017 | 131 | 106 | 27 | - |
+| 2016 | 128 | 103 | 22 | - |
+| 2015 | 125 | 95 | 21 | - |
+| 2014 | 120 | 92 | 21 | - |
+| 2013 | 118 | 91 | 21 | - |
+| 2012 | 120 | 97 | 27 | - |
+| 2011 | 115 | 97 | 27 | - |
+| 2010 | 110 | 95 | 21 | - |",,,,,,,
+train-multi_col_20169-6025,statista,h_bar,arithmetic_comparison,What's the combined percentage of the responses for maximal safety?,"{""answer"": 92.6, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Maximal safety (all columns)""], ""rationale"": ""Maximal safety: 17.3 + 75.3 = 92.6.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Expectation
+Series: I totally agree (colour: blue) | I mostly agree (colour: dark blue)
+Table:
+| Expectation | I mostly agree | I totally agree |
+|---|---|---|
+| Maximal safety | 17.3% | 75.3% |
+| Economic mobility | 25.1% | 63.7% |
+| Highest comfortwhen travelling | 34.1% | 51.8% |
+| Sustainability andenvironmental friendliness | 27.6% | 58.1% |
+| That it is mainly functional | 37.1% | 41.6% |
+| Driving enjoyment -Driving should be fun | 35% | 40% |
+| Reflecting my socialstatus/my self-image | 21.2% | 13.7% |",,,,,,,
+train-multi_col_20264-6056,statista,h_bar,retrieval,What is the percentage of strong priority for reducing costs in business strategies over the next 12 months?,"{""answer"": 47, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Reducing costs, Col=Strong priority (47%)""], ""rationale"": ""Reducing costs, Strong priority is 47%.""}","Source: Statista
+Chart type: horizontal bar, 3 series
+Category axis: Characteristic
+Series: Not a priority (colour: blue) | Somewhat of a priority (colour: dark blue) | Strong priority (colour: light grey)
+Table:
+| Characteristic | Strong priority | Somewhat of a priority | Not a priority |
+|---|---|---|---|
+| Introducing new products | 64% | 28% | 8% |
+| Developing e-commerce/digital channels (new) | 55% | 16% | 29% |
+| Reducing costs | 47% | 43% | 10% |
+| Expanding into new markets | 44% | 44% | 12% |
+| Focus on research and development | 42% | 48% | 10% |",,,,,,,
+train-multi_col_20264-6057,statista,h_bar,arithmetic_comparison,"What is the difference between the maximum value of ""strong priority"" and the minimum value of ""Not a priority""?","{""answer"": 56, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Strong priority (all rows)"", ""Col=Not a priority (all rows)""], ""rationale"": ""Strong priority maximum 64 minus Not a priority minimum 8 = 56.""}","Source: Statista
+Chart type: horizontal bar, 3 series
+Category axis: Characteristic
+Series: Not a priority (colour: blue) | Somewhat of a priority (colour: dark blue) | Strong priority (colour: light grey)
+Table:
+| Characteristic | Strong priority | Somewhat of a priority | Not a priority |
+|---|---|---|---|
+| Introducing new products | 64% | 28% | 8% |
+| Developing e-commerce/digital channels (new) | 55% | 16% | 29% |
+| Reducing costs | 47% | 43% | 10% |
+| Expanding into new markets | 44% | 44% | 12% |
+| Focus on research and development | 42% | 48% | 10% |",,,,,,,
+train-multi_col_20288-6068,statista,v_bar,retrieval,What was the price for beer in 2014/15?,"{""answer"": 5.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2014/15, Col=Beer* (5.5)""], ""rationale"": ""Beer in 2014/15 is 5.5.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Beer* (colour: blue) | Soft drink** (colour: dark blue) | Hot dog (colour: light grey)
+Table:
+| Characteristic | Beer* | Soft drink** | Hot dog |
+|---|---|---|---|
+| 2015/16 | 5.5 | 2.5 | 5.0 |
+| 2014/15 | 5.5 | 2.5 | 5.0 |
+| 2013/14 | 5.0 | 3.25 | 3.0 |
+| 2012/13 | 5.0 | 2.5 | 4.75 |
+| 2011/12 | 5.0 | 3.25 | 3.0 |
+| 2010/11 | 5.0 | 2.5 | 4.5 |",,,,,,,
+train-multi_col_20399-6097,statista,v_bar,arithmetic_comparison,What is the difference between the maximum economic impact of leisure spending and visitor exports(in trillion)?,"{""answer"": 2.84, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Leisure spending, Col=2018 (4.48)"", ""Row=Visitor exports, Col=2018 (1.64)""], ""rationale"": ""Maximum Leisure spending 4.48 minus maximum Visitor exports 1.64 = 2.84.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: 2016 (colour: blue) | 2017 (colour: dark blue) | 2018 (colour: light grey)
+Table:
+| Characteristic | 2016 | 2017 | 2018 |
+|---|---|---|---|
+| Leisure spending | 3.82 | 4.23 | 4.48 |
+| Domestic spending | 3.57 | 3.97 | 4.06 |
+| Visitor exports | 1.4 | 1.49 | 1.64 |
+| Business spending | 1.15 | 1.23 | 1.23 |
+| Capital investment | 0.81 | 0.88 | 0.94 |",,,,,,,
+train-multi_col_20495-6141,statista,h_bar,arithmetic_comparison,What is the average of Shrek and Shrek 2 box office revenue in North America?,"{""answer"": 354.45, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Shrek, Col=North America (267.67)"", ""Row=Shrek 2, Col=North America (441.23)""], ""rationale"": ""North America revenue: Shrek 267.67, Shrek 2 441.23; (267.67 + 441.23) / 2 = 354.45.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Characteristic
+Series: Worldwide (colour: blue) | North America (colour: dark blue)
+Table:
+| Characteristic | North America | Worldwide |
+|---|---|---|
+| Shrek 2 | 441.23 | 919.8 |
+| Shrek the Third | 322.72 | 799.0 |
+| Shrek | 267.67 | 484.4 |
+| Shrek Forever After | 238.74 | 752.6 |
+| Puss in Boots | 149.26 | 555.0 |",,,,,,,
+train-multi_col_20556-6172,statista,v_bar,arithmetic_comparison,What is the difference between the tallest light blue bar and the tallest dark blue bar??,"{""answer"": 3, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Beer* = blue"", ""Colour: Soft drink** = dark blue"", ""Row=2015/16, Col=Beer* (7.5)"", ""Row=2015/16, Col=Soft drink** (4.5)""], ""rationale"": ""The lighter blue series is Beer*, max 7.5; dark blue is Soft drink**, max 4.5; 7.5 - 4.5 = 3.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Beer* (colour: blue) | Soft drink** (colour: dark blue) | Hot dog (colour: light grey)
+Table:
+| Characteristic | Beer* | Soft drink** | Hot dog |
+|---|---|---|---|
+| 2015/16 | 7.5 | 4.5 | 5.25 |
+| 2014/15 | 7.25 | 4.5 | 5.25 |
+| 2013/14 | 7.25 | 4.5 | 5.25 |
+| 2012/13 | 6.0 | 3.25 | 4.0 |
+| 2011/12 | 6.0 | 3.25 | 4.0 |
+| 2010/11 | 5.0 | 3.25 | 2.5 |",,,,,,,
+train-multi_col_20652-6203,statista,h_bar,arithmetic_comparison,What is the average revenue of infectious diseases?,"{""answer"": 2.05, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Infectious diseases, Col=2019 (2.2%)"", ""Row=Infectious diseases, Col=2020 (1.9%)""], ""rationale"": ""Infectious diseases: 2.2% and 1.9%; (2.2 + 1.9) / 2 = 2.05.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Characteristic
+Series: 2020 (colour: dark blue) | 2019 (colour: blue)
+Table:
+| Characteristic | 2019 | 2020 |
+|---|---|---|
+| Oncology | 56.8% | 52.4% |
+| Immunology | 17.5% | 18.5% |
+| Neuroscience | 9% | 11.1% |
+| Haemophilia A | 2.8% | 4.9% |
+| Ophthalmology | 3.8% | 3.2% |
+| Infectious diseases | 2.2% | 1.9% |
+| Other | 7.9% | 8% |",,,,,,,
+train-multi_col_20722-6221,statista,v_bar,arithmetic_comparison,What is the difference between the highest share and lowest share of employees in agriculture sector?,"{""answer"": 7.27, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Agriculture (all rows)"", ""Row=2010, Col=Agriculture (22.34%)"", ""Row=2020, Col=Agriculture (15.07%)""], ""rationale"": ""Agriculture peaks at 22.34% (2010) and bottoms at 15.07% (2020); 22.34 - 15.07 = 7.27.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Agriculture (colour: blue) | Industry (colour: dark blue) | Services (colour: light grey)
+Table:
+| Characteristic | Agriculture | Industry | Services |
+|---|---|---|---|
+| 2020 | 15.07% | 27.35% | 57.58% |
+| 2019 | 15.46% | 27.14% | 57.4% |
+| 2018 | 15.93% | 26.9% | 57.17% |
+| 2017 | 17.22% | 25.3% | 57.48% |
+| 2016 | 18.61% | 24.43% | 56.96% |
+| 2015 | 19.41% | 24.46% | 56.13% |
+| 2014 | 19.86% | 24.66% | 55.48% |
+| 2013 | 21.29% | 25.86% | 52.85% |
+| 2012 | 20.97% | 26.46% | 52.58% |
+| 2011 | 21.22% | 26.8% | 51.98% |
+| 2010 | 22.34% | 25.6% | 52.06% |",,,,,,,
+train-multi_col_20743-6234,statista,v_bar,visual_reference,What is the highest value in blue bar?,"{""answer"": 404, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Held by the public = blue"", ""Col=Held by the public (all rows)"", ""Row=2019, Col=Held by the public (404)""], ""rationale"": ""Blue is Held by the public; its highest value is 404 in 2019.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Held by the public (colour: blue) | Intragovernmental debt holdings (colour: dark blue)
+Table:
+| Characteristic | Held by the public | Intragovernmental debt holdings |
+|---|---|---|
+| 2019 | 404 | 170 |
+| 2018 | 357 | 171 |
+| 2017 | 296 | 161 |
+| 2016 | 273 | 157 |
+| 2015 | 251 | 156 |
+| 2014 | 260 | 173 |
+| 2013 | 247 | 178 |
+| 2012 | 245 | 187 |
+| 2011 | 251 | 203 |",,,,,,,
+train-multi_col_20758-6244,statista,v_bar,retrieval,What is the October 2019 forecast for 2019?,"{""answer"": 662.99, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2019, Col=October 2019 forecast (662.99)""], ""rationale"": ""The 2019 row under October 2019 forecast shows 662.99.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: October 2019 forecast (colour: blue) | March 2020 forecast (colour: dark blue)
+Table:
+| Characteristic | October 2019 forecast | March 2020 forecast |
+|---|---|---|
+| 2024* | - | 865.12 |
+| 2023* | 839.45 | 825.82 |
+| 2022* | 801.34 | 783.62 |
+| 2021* | 759.76 | 738.53 |
+| 2020* | 712.02 | 691.72 |
+| 2019 | 662.99 | 646.71 |",,,,,,,
+train-multi_col_20837-6266,statista,h_bar,visual_reference,What does the light blue bar indicate?,"{""answer"": ""Up to 49,999 GBP"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Up to 49,999 GBP = blue"", ""Colour: 50,000 to 99,999 GBP = dark blue""], ""rationale"": ""The lighter of the two blues is the blue series, Up to 49,999 GBP; dark blue is 50,000 to 99,999 GBP.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Characteristic
+Series: 50,000 to 99,999 GBP (colour: dark blue) | Up to 49,999 GBP (colour: blue)
+Table:
+| Characteristic | Up to 49,999 GBP | 50,000 to 99,999 GBP |
+|---|---|---|
+| Participate in social media contest to receive exclusive cashback rebate offer | 39% | 41% |
+| Opt-in during rebate cash back process for future relevant product marketing messages | 54% | 46% |
+| Interested in seeking out products that come with cashback rebates | 73% | 71% |
+| I will buy a product with a high-value cashback rebate | 63% | 63% |
+| I search out products with cashback rebates | 37% | 37% |",,,,,,,
+train-multi_col_20838-6269,statista,h_bar,arithmetic_comparison,In which price range the difference between budgeted and reported spending is maximum?,"{""answer"": ""$5,001-$15,000"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Budgeted (all rows)"", ""Col=Reported spending (all rows)"", ""Row=$5,001-$15,000 (all columns)""], ""rationale"": ""Gaps: 5, 7, 2, 4, 2, 2, 4 points; the largest is 7 (24% vs 17%) for $5,001-$15,000.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Characteristic
+Series: Reported spending (colour: dark blue) | Budgeted (colour: blue)
+Table:
+| Characteristic | Budgeted | Reported spending |
+|---|---|---|
+| $5,000 or less | 9% | 4% |
+| $5,001-$15,000 | 24% | 17% |
+| $15,001-$25,000 | 21% | 19% |
+| $25,001-$50,000 | 26% | 30% |
+| $50,001-$75,000 | 10% | 12% |
+| $75,001-$100,000 | 6% | 8% |
+| More than $100,000 | 5% | 9% |",,,,,,,
+train-multi_col_20962-6305,statista,v_bar,arithmetic_comparison,What is the difference between the domestic and total market in 2019?,"{""answer"": 5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2019, Col=Domestic market (14)"", ""Row=2019, Col=Total market (19)""], ""rationale"": ""In 2019: 19 - 14 = 5.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Domestic market (colour: blue) | Total market (colour: dark blue)
+Table:
+| Characteristic | Domestic market | Total market |
+|---|---|---|
+| 2019 | 14 | 19 |
+| 2018 | 16 | 22 |
+| 2017 | 16 | 21 |
+| 2016 | 15 | 22 |
+| 2015 | 16 | 22 |
+| 2014 | 15 | 22 |
+| 2013 | 18 | 125 |
+| 2012 | 14 | 18 |
+| 2011 | 17 | 20 |",,,,,,,
+train-multi_col_21113-6341,statista,v_bar,arithmetic_comparison,What is the average of same in both the categories?,"{""answer"": 50, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Same (all rows)""], ""rationale"": ""Same: 47% and 53%; (47 + 53) / 2 = 50.""}","Source: Statista
+Chart type: vertical bar, 6 series
+Category axis: Characteristic
+Series: Much more (colour: blue) | Somewhat more (colour: dark blue) | Same (colour: light grey) | Somewhat less (colour: red) | Much less (colour: green) | Don't know (colour: yellow)
+Table:
+| Characteristic | Much more | Somewhat more | Same | Somewhat less | Much less | Don't know |
+|---|---|---|---|---|---|---|
+| Would you say you are eating more or less in the lockdown period | 9% | 31% | 47% | 10% | 2% | 2% |
+| Would you say you are eating more or less healthier in the lockdown period | 4% | 16% | 53% | 20% | 5% | 3% |",,,,,,,
+train-multi_col_21121-6346,statista,v_bar,visual_reference,Which bank has highest cost-income ration of European banks in the year 20012 ?,"{""answer"": ""Universal banks"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=2012 (all rows)"", ""Row=Universal banks, Col=2012 (73%)""], ""rationale"": ""In 2012 Universal banks have the highest ratio at 73%, above Domestic retail banks at 65%.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: 2012 (colour: blue) | 2013 (colour: dark blue)
+Table:
+| Characteristic | 2012 | 2013 |
+|---|---|---|
+| Universal banks | 73% | 73% |
+| SFS specialists | 59% | 61% |
+| International retail banks | 52% | 52% |
+| Domestic retail banks | 65% | 62% |",,,,,,,
+train-multi_col_239-5388,statista,v_bar,retrieval,In which year was the price of Arabica Coffee the least?,"{""answer"": 2019, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Arabica (all rows)"", ""Row=2019*, Col=Arabica (2.88)""], ""rationale"": ""Arabica's lowest price is 2.88, in 2019.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Arabica (colour: blue) | Robusta (colour: dark blue)
+Table:
+| Characteristic | Arabica | Robusta |
+|---|---|---|
+| 2025* | 3.37 | 1.73 |
+| 2024* | 3.37 | 1.68 |
+| 2023* | 3.36 | 1.64 |
+| 2022* | 3.36 | 1.59 |
+| 2021* | 3.35 | 1.54 |
+| 2020* | 3.35 | 1.5 |
+| 2019* | 2.88 | 1.62 |
+| 2018 | 2.93 | 1.87 |
+| 2017 | 3.32 | 2.23 |
+| 2016 | 3.61 | 1.95 |
+| 2015 | 3.53 | 1.94 |
+| 2014 | 4.42 | 2.22 |",,,,,,,
+train-multi_col_285-5406,statista,line,retrieval,In which year the net income of adidas was high ?,"{""answer"": 2019, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Adidas (all rows)"", ""Row=2019, Col=Adidas (1947)""], ""rationale"": ""Adidas net income peaks at 1947 in 2019.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: Adidas (colour: blue) | Puma (colour: dark blue)
+Table:
+| Characteristic | Adidas | Puma |
+|---|---|---|
+| 2020 | 674 | 229.7 |
+| 2019 | 1947 | 68.5 |
+| 2018 | 1704 | 83.3 |
+| 2017 | 1100 | 128.7 |
+| 2016 | 1020 | 78.7 |
+| 2015 | 640 | 37.1 |
+| 2014 | 496 | 64.1 |
+| 2013 | 790 | 5.3 |
+| 2012** | 524 | 70.0 |
+| 2011 | 613 | 230.0 |
+| 2010 | 567 | 202.0 |
+| 2009 | 245 | 80.0 |
+| 2008 | 642 | 233.0 |
+| 2007 | 551 | 269.0 |
+| 2006 | 483 | 263.0 |",,,,,,,
+train-multi_col_32-7356,statista,line,visual_reference,At which year the blue line peaked?,"{""answer"": 2019, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Nike** = blue"", ""Col=Nike** (all rows)"", ""Row=2019, Col=Nike** (35.13)""], ""rationale"": ""Blue is Nike**; its highest value is 35.13 in 2019.""}","Source: Statista
+Chart type: line, 3 series
+Category axis: Characteristic
+Series: Nike** (colour: blue) | Adidas Group (colour: dark blue) | Puma (colour: light grey)
+Table:
+| Characteristic | Nike** | Adidas Group | Puma |
+|---|---|---|---|
+| 2020 | 33.6 | 19.8 | 5.2 |
+| 2019 | 35.13 | 23.64 | 5.5 |
+| 2018 | 31.35 | 21.92 | 4.65 |
+| 2017 | 30.57 | 21.22 | 4.14 |
+| 2016 | 29.1 | 18.48 | 3.63 |
+| 2015 | 27.51 | 16.92 | 3.39 |
+| 2014 | 24.99 | 14.53 | 2.97 |
+| 2013 | 22.75 | 14.2 | 2.99 |
+| 2012 | 20.97 | 14.88 | 3.27 |
+| 2011 | 18.08 | 13.32 | 3.17 |
+| 2010 | 16.47 | 11.99 | 2.86 |
+| 2009 | 16.65 | 10.38 | 2.61 |
+| 2008 | 16.74 | 10.8 | 2.77 |
+| 2007 | 14.68 | 10.3 | 2.74 |
+| 2006 | 13.44 | 10.08 | 2.76 |",,,,,,,
+train-multi_col_32-7357,statista,line,arithmetic_comparison,What's the largest decrease in the global revenue of Addidas Group in a single year?,"{""answer"": 3.84, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2019, Col=Adidas Group (23.64)"", ""Row=2020, Col=Adidas Group (19.8)""], ""rationale"": ""Adidas Group fell from 23.64 in 2019 to 19.8 in 2020, the largest one-year drop; 23.64 - 19.8 = 3.84.""}","Source: Statista
+Chart type: line, 3 series
+Category axis: Characteristic
+Series: Nike** (colour: blue) | Adidas Group (colour: dark blue) | Puma (colour: light grey)
+Table:
+| Characteristic | Nike** | Adidas Group | Puma |
+|---|---|---|---|
+| 2020 | 33.6 | 19.8 | 5.2 |
+| 2019 | 35.13 | 23.64 | 5.5 |
+| 2018 | 31.35 | 21.92 | 4.65 |
+| 2017 | 30.57 | 21.22 | 4.14 |
+| 2016 | 29.1 | 18.48 | 3.63 |
+| 2015 | 27.51 | 16.92 | 3.39 |
+| 2014 | 24.99 | 14.53 | 2.97 |
+| 2013 | 22.75 | 14.2 | 2.99 |
+| 2012 | 20.97 | 14.88 | 3.27 |
+| 2011 | 18.08 | 13.32 | 3.17 |
+| 2010 | 16.47 | 11.99 | 2.86 |
+| 2009 | 16.65 | 10.38 | 2.61 |
+| 2008 | 16.74 | 10.8 | 2.77 |
+| 2007 | 14.68 | 10.3 | 2.74 |
+| 2006 | 13.44 | 10.08 | 2.76 |",,,,,,,
+train-multi_col_40253-6417,statista,v_bar,arithmetic_comparison,"What is the highest average price of roads bicycles sold in Spain in 2019, by type (in euros)?","{""answer"": 1773, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Road bicycles, Col=2019 (1773)""], ""rationale"": ""Road bicycles averaged 1773 euros in 2019.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: 2017 (colour: blue) | 2018 (colour: dark blue) | 2019 (colour: light grey)
+Table:
+| Characteristic | 2017 | 2018 | 2019 |
+|---|---|---|---|
+| Electric bicycles | 2107 | 2165 | 2403 |
+| Road bicycles | 1670 | 1755 | 1773 |
+| Mountain bicycles | 680 | 704 | 699 |
+| City bicycles | 248 | 258 | 298 |
+| Children's bicycles | 137 | 141 | 147 |",,,,,,,
+train-multi_col_40525-6469,statista,line,arithmetic_comparison,What is the difference between highest value of healthcare and lowest value of construction start-ups?,"{""answer"": 71.4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2000, Col=Health care and social assistance start-ups (100.0)"", ""Row=2010, Col=Construction start-ups (28.6)""], ""rationale"": ""Health care max is 100.0; construction min is 28.6; 100 - 28.6 = 71.4.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: Health care and social assistance start-ups (colour: blue) | Construction start-ups (colour: dark blue)
+Table:
+| Characteristic | Health care and social assistance start-ups | Construction start-ups |
+|---|---|---|
+| 2010 | 54.4 | 28.6 |
+| 2009 | 56.5 | 32.8 |
+| 2008 | 59.1 | 38.6 |
+| 2007 | 61.8 | 42.8 |
+| 2006 | 65.1 | 46.7 |
+| 2005 | 67.9 | 50.1 |
+| 2004 | 71.7 | 55.3 |
+| 2003 | 76.3 | 60.6 |
+| 2002 | 82.0 | 68.4 |
+| 2001 | 87.1 | 77.9 |
+| 2000 | 100.0 | 100.0 |",,,,,,,
+train-multi_col_40526-6470,statista,v_bar,retrieval,What is the net income of google in 2010?,"{""answer"": 8.5, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2010, Col=Google (8.5)""], ""rationale"": ""Google's 2010 net income is 8.5.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Google (colour: blue) | Microsoft (colour: dark blue)
+Table:
+| Characteristic | Google | Microsoft |
+|---|---|---|
+| 2014 | 14.44 | 22.07 |
+| 2013 | 12.92 | 21.86 |
+| 2012* | 10.74 | 16.98 |
+| 2011 | 9.7 | 23.15 |
+| 2010 | 8.5 | 18.8 |
+| 2009 | 6.5 | 14.6 |
+| 2008 | 4.2 | 17.7 |",,,,,,,
+train-multi_col_40734-6541,statista,v_bar,arithmetic_comparison,"In which year, the difference between the sales of mobile and PC console is minimum?","{""answer"": 2020, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2020*, Col=Mobile (75%)"", ""Row=2020*, Col=PC and console (25%)"", ""Row=2016, Col=Mobile (78%)"", ""Row=2016, Col=PC and console (22%)""], ""rationale"": ""2020: 75 - 25 = 50. 2016: 78 - 22 = 56. The gap is smaller in 2020.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Mobile (colour: blue) | PC and console (colour: dark blue)
+Table:
+| Characteristic | Mobile | PC and console |
+|---|---|---|
+| 2020* | 75% | 25% |
+| 2016 | 78% | 22% |",,,,,,,
+train-multi_col_40900-6574,statista,v_bar,arithmetic_comparison,How many companies were operating in domestic market in 2011?,"{""answer"": 13, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2011, Col=Domestic market (13)""], ""rationale"": ""In 2011 the domestic market value is 13.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Domestic market (colour: blue) | Total market (colour: dark blue)
+Table:
+| Characteristic | Domestic market | Total market |
+|---|---|---|
+| 2019 | 11 | 11 |
+| 2018 | 11 | 11 |
+| 2017 | 10 | 10 |
+| 2016 | 10 | 10 |
+| 2015 | 10 | 10 |
+| 2014 | 10 | 10 |
+| 2013 | 13 | 13 |
+| 2012 | 13 | 13 |
+| 2011 | 13 | 13 |",,,,,,,
+train-multi_col_60161-6705,statista,v_bar,arithmetic_comparison,Find the sum of the value between 50 to 60 in the chart?,"{""answer"": 114, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Developing markets, Col=Vehicle-sharing program (56%)"", ""Row=Developing markets, Col=Ride-share service (58%)""], ""rationale"": ""Only 56 and 58 fall between 50 and 60; 56 + 58 = 114.""}","Source: Statista
+Chart type: vertical bar, 4 series
+Category axis: Characteristic
+Series: Vehicle-sharing program (colour: blue) | Mobility package (colour: dark blue) | Ride-share service (colour: light grey) | Intermodal (colour: red)
+Table:
+| Characteristic | Vehicle-sharing program | Mobility package | Ride-share service | Intermodal |
+|---|---|---|---|---|
+| Mature markets | 22% | 31% | 20% | 23% |
+| Developing markets | 56% | 64% | 58% | 63% |",,,,,,,
+train-multi_col_60311-6739,statista,line,arithmetic_comparison,What is the difference between the highest percentage and lowest percentage of the black line graph?,"{""answer"": 3.19, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: male = dark blue"", ""Row=2018, Col=male (68.44)"", ""Row=2008, Col=male (65.25)""], ""rationale"": ""The darkest line is male (dark blue): highest 68.44 in 2018, lowest 65.25 in 2008; 68.44 - 65.25 = 3.19.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: female (colour: blue) | male (colour: dark blue)
+Table:
+| Characteristic | female | male |
+|---|---|---|
+| 2018 | 75.55 | 68.44 |
+| 2017 | 75.34 | 68.25 |
+| 2016 | 75.12 | 68.06 |
+| 2015 | 74.86 | 67.84 |
+| 2014 | 74.55 | 67.56 |
+| 2013 | 74.18 | 67.23 |
+| 2012 | 73.76 | 66.84 |
+| 2011 | 73.31 | 66.4 |
+| 2010 | 72.86 | 65.96 |
+| 2009 | 72.47 | 65.57 |
+| 2008 | 72.17 | 65.25 |",,,,,,,
+train-multi_col_60346-6753,statista,line,arithmetic_comparison,what is the difference between first and last data in dark blue line?,"{""answer"": 0.56, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Direct contribution = dark blue"", ""Row=2019, Col=Direct contribution (5.66%)"", ""Row=2010, Col=Direct contribution (5.1%)""], ""rationale"": ""Dark blue is Direct contribution; first value 5.66 (2019) and last 5.1 (2010); 5.66 - 5.1 = 0.56.""}","Source: Statista
+Chart type: line, 2 series
+Category axis: Characteristic
+Series: Total contribution (colour: blue) | Direct contribution (colour: dark blue)
+Table:
+| Characteristic | Total contribution | Direct contribution |
+|---|---|---|
+| 2019 | 16.28% | 5.66% |
+| 2018 | 16.44% | 5.77% |
+| 2017 | 16.47% | 5.82% |
+| 2016 | 16.15% | 5.77% |
+| 2015 | 15.99% | 5.64% |
+| 2014 | 15.62% | 5.52% |
+| 2013 | 15.37% | 5.35% |
+| 2012 | 14.88% | 5.17% |
+| 2011 | 14.22% | 5.03% |
+| 2010 | 14.5% | 5.1% |",,,,,,,
+train-multi_col_60448-6765,statista,v_bar,arithmetic_comparison,What is the average of last 3 years in Advertising services?,"{""answer"": 86.33, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2020, Col=Advertising services (86%)"", ""Row=2019, Col=Advertising services (87%)"", ""Row=2018, Col=Advertising services (86%)""], ""rationale"": ""Last three years: 86, 87, 86; sum 259; 259 / 3 = 86.33.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Advertising services (colour: blue) | Data licensing (colour: dark blue)
+Table:
+| Characteristic | Advertising services | Data licensing |
+|---|---|---|
+| 2020 | 86% | 14% |
+| 2019 | 87% | 13% |
+| 2018 | 86% | 14% |
+| 2017 | 86% | 14% |
+| 2016 | 89% | 11% |
+| 2015 | 90% | 10% |
+| 2014 | 90% | 10% |
+| 2013 | 89% | 11% |
+| 2012 | 85% | 15% |
+| 2011 | 73% | 27% |
+| 2010 | 26% | 74% |",,,,,,,
+train-multi_col_60618-6828,statista,v_bar,arithmetic_comparison,How many bars shown in the chart?,"{""answer"": 12, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Provider (all rows)"", ""Col=Enterprises (all rows)""], ""rationale"": ""Six categories each have two bars (Provider and Enterprises): 6 x 2 = 12.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Provider (colour: blue) | Enterprises (colour: dark blue)
+Table:
+| Characteristic | Provider | Enterprises |
+|---|---|---|
+| Whether our IT infrastructure will cope with extra working from home | 35% | 51% |
+| Whether we have the support resources in place to manage the wellness of our teams | 46% | 63% |
+| Whether we can source the necessary equipment | 38% | 62% |
+| Whether we have the management structure in place to manage decentralized teams | 25% | 42% |
+| Whether we have the financial reserves to last us until the situation is clear | 46% | 58% |
+| Whether local broadband infrastructure is good enough to sustain working from home during the crisis | 53% | 64% |",,,,,,,
+train-multi_col_60703-6869,statista,v_bar,arithmetic_comparison,What is the average of blue bar?,"{""answer"": 63, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Colour: Public = blue"", ""Col=Public (all rows)""], ""rationale"": ""Blue is Public: 79 + 63 + 47 = 189; 189 / 3 = 63.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Public (colour: blue) | Private nonprofit (colour: dark blue) | For-profit (colour: light grey)
+Table:
+| Characteristic | Public | Private nonprofit | For-profit |
+|---|---|---|---|
+| Associate | 79% | 5% | 16% |
+| Bachelor's | 63% | 29% | 7% |
+| Graduate | 47% | 44% | 9% |",,,,,,,
+train-multi_col_60731-6885,statista,v_bar,arithmetic_comparison,Which is the average value of development in 2018 and 2019?,"{""answer"": 4.08, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=Development, Col=2018 (4.08)"", ""Row=Development, Col=2019 (4.08)""], ""rationale"": ""Development is 4.08 in both 2018 and 2019, so the average is 4.08.""}","Source: Statista
+Chart type: vertical bar, 4 series
+Category axis: Characteristic
+Series: 2018 (colour: blue) | 2019 (colour: dark blue) | 2020 (colour: light grey) | 2021 (colour: red)
+Table:
+| Characteristic | 2018 | 2019 | 2020 | 2021 |
+|---|---|---|---|---|
+| Investment | 4.14 | 4.21 | 4.25 | 3.36 |
+| Development | 4.08 | 4.08 | 4.06 | 3.28 |",,,,,,,
+train-multi_col_60761-6893,statista,v_bar,arithmetic_comparison,What is the difference between maximum and minimum female earnings?,"{""answer"": 567, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Female (all rows)""], ""rationale"": ""Female maximum is 3290 (2020) and minimum 2723 (2010); 3290 - 2723 = 567.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Male (colour: blue) | Female (colour: dark blue)
+Table:
+| Characteristic | Male | Female |
+|---|---|---|
+| 2020* | 3904 | 3290 |
+| 2019 | 3838 | 3229 |
+| 2018 | 3759 | 3154 |
+| 2017 | 3696 | 3101 |
+| 2016 | 3675 | 3075 |
+| 2015 | 3653 | 3041 |
+| 2014 | 3606 | 3004 |
+| 2013 | 3562 | 2959 |
+| 2012 | 3483 | 2893 |
+| 2011 | 3365 | 2799 |
+| 2010 | 3288 | 2723 |",,,,,,,
+train-multi_col_60807-6917,statista,h_bar,arithmetic_comparison,What is the total percentage of cannabis user in preferred method and most common method in high potency form?,"{""answer"": 82.1, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=High potency, Col=Preferred method (38.5%)"", ""Row=High potency, Col=Most common method (43.6%)""], ""rationale"": ""High potency: 38.5 + 43.6 = 82.1.""}","Source: Statista
+Chart type: horizontal bar, 2 series
+Category axis: Characteristic
+Series: Most common method (colour: dark blue) | Preferred method (colour: blue)
+Table:
+| Characteristic | Preferred method | Most common method |
+|---|---|---|
+| Normal/weed/bush... | 47.7% | 34.6% |
+| High potency | 38.5% | 43.6% |
+| Resin/hash | 10.2% | 10.9% |
+| Edibles | 1.8% | 5.8% |
+| Concentrates | 1.4% | 3.5% |
+| Kief | 0.4% | 1.6% |",,,,,,,
+train-multi_col_60964-7002,statista,v_bar,retrieval,What is the number of bottles of Canadian brand beer sold in Canada in the year 2010 (in million hectoliters)?,"{""answer"": 10.6, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2010, Col=Bottles (10.6)""], ""rationale"": ""Bottles in 2010 were 10.6.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Bottles (colour: blue) | Cans (colour: dark blue) | Draught (colour: light grey)
+Table:
+| Characteristic | Bottles | Cans | Draught |
+|---|---|---|---|
+| 2015 | 6.72 | 10.38 | 1.87 |
+| 2014 | 7.4 | 9.67 | 1.87 |
+| 2013 | 8.22 | 9.08 | 1.87 |
+| 2012 | 9.0 | 8.72 | 1.84 |
+| 2011 | 9.81 | 7.87 | 1.84 |
+| 2010 | 10.6 | 7.18 | 1.85 |
+| 2009 | 11.36 | 6.6 | 1.81 |
+| 2008 | 11.9 | 6.35 | 1.87 |",,,,,,,
+train-multi_col_80-7370,statista,v_bar,visual_reference,Which race has the tallest bars?,"{""answer"": ""White"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=White (all columns)""], ""rationale"": ""White has the tallest bars at 85% and 86%, far above every other group.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Percentage of deaths in custody (colour: blue) | Percentage of population* (colour: dark blue)
+Table:
+| Characteristic | Percentage of deaths in custody | Percentage of population* |
+|---|---|---|
+| White | 85% | 86% |
+| Black | 8% | 3% |
+| Asian | 3% | 8% |
+| Mixed | 2% | 2% |
+| Other | 1% | 1% |",,,,,,,
+train-multi_col_80265-7101,statista,v_bar,arithmetic_comparison,How much is the average over-priced opinion more than that of About right opinion across all items?,"{""answer"": 46, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Over-priced (all rows)"", ""Col=About right (all rows)""], ""rationale"": ""Over-priced average (75 + 65) / 2 = 70; About right average (19 + 29) / 2 = 24; 70 - 24 = 46.""}","Source: Statista
+Chart type: vertical bar, 2 series
+Category axis: Characteristic
+Series: Over-priced (colour: blue) | About right (colour: dark blue)
+Table:
+| Characteristic | Over-priced | About right |
+|---|---|---|
+| Drinks | 75% | 19% |
+| Food | 65% | 29% |",,,,,,,
+train-multi_col_80406-7253,statista,v_bar,arithmetic_comparison,What is the industries average in the last three years?,"{""answer"": 15.36, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2019, Col=Industry (16.31%)"", ""Row=2018, Col=Industry (14.65%)"", ""Row=2017, Col=Industry (15.11%)""], ""rationale"": ""Industry 2017-2019: (15.11 + 14.65 + 16.31) / 3 = 46.07 / 3 = 15.36.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Agriculture (colour: blue) | Industry (colour: dark blue) | Services (colour: light grey)
+Table:
+| Characteristic | Agriculture | Industry | Services |
+|---|---|---|---|
+| 2019 | 26.88% | 16.31% | 48.03% |
+| 2018 | 28.09% | 14.65% | 48.76% |
+| 2017 | 28.49% | 15.11% | 48.4% |
+| 2016 | 27.75% | 15.7% | 48.2% |
+| 2015 | 26.39% | 16.39% | 49.24% |
+| 2014 | 25.62% | 16.41% | 49.53% |
+| 2013 | 25.28% | 17.24% | 49.42% |
+| 2012 | 25.77% | 16.96% | 48.87% |
+| 2011 | 25.8% | 18.14% | 46.98% |
+| 2010 | 25.84% | 18.01% | 44.55% |
+| 2009 | 26.98% | 17.92% | 44.09% |",,,,,,,
+train-multi_col_960-5927,statista,v_bar,arithmetic_comparison,What is the difference between maximum GDP in agriculture sector and minimum GDP in Industry over the years?,"{""answer"": 21.91, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Agriculture (all rows)"", ""Col=Industry (all rows)""], ""rationale"": ""Max agriculture 6.25 (2011); min industry 28.16 (2019); 28.16 - 6.25 = 21.91.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Agriculture (colour: blue) | Industry (colour: dark blue) | Services (colour: light grey)
+Table:
+| Characteristic | Agriculture | Industry | Services |
+|---|---|---|---|
+| 2019 | 4.1% | 28.16% | 58.16% |
+| 2018 | 4.36% | 28.27% | 57.76% |
+| 2017 | 4.31% | 28.89% | 57.32% |
+| 2016 | 4.06% | 30.06% | 55.58% |
+| 2015 | 4.19% | 29.95% | 53.78% |
+| 2014 | 4.72% | 31.61% | 52.18% |
+| 2013 | 5.38% | 32.17% | 50.66% |
+| 2012 | 4.67% | 32.5% | 50.67% |
+| 2011 | 6.25% | 38.52% | 43.15% |
+| 2010 | 5% | 37.83% | 46.41% |
+| 2009 | 6.14% | 36.42% | 47.8% |",,,,,,,
+train-multi_col_982-5934,statista,v_bar,retrieval,What flavor has the most sales in 2020?,"{""answer"": ""Chocolate"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=2020 (all columns)""], ""rationale"": ""In 2020 Chocolate has 5265, above Biscuits 1125 and Sugar confectionery 585.""}","Source: Statista
+Chart type: vertical bar, 3 series
+Category axis: Characteristic
+Series: Chocolate (colour: blue) | Sugar confectionery (colour: dark blue) | Biscuits (colour: light grey)
+Table:
+| Characteristic | Chocolate | Sugar confectionery | Biscuits |
+|---|---|---|---|
+| 2020 | 5265 | 585 | 1125 |
+| 2019 | 5930 | 722 | 1236 |
+| 2018 | 6031 | 812 | 1280 |
+| 2017 | 6362 | 1098 | 1339 |
+| 2016 | 6267 | 1111 | 1301 |
+| 2015 | 6365 | 1130 | 1375 |
+| 2014 | 7053 | 1148 | 1568 |
+| 2013 | 7477 | 1230 | 1576 |
+| 2012 | 7527 | 1310 | 1604 |
+| 2011 | 7102 | 866 | 1097 |
+| 2010* | 7642 | 938 | 1155 |",,,,,,,
+train-two_col_100535-4192,statista,v_bar,retrieval,Which country has a brand value of 198 (in million euros)?,"{""answer"": ""Netherlands"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Row=Netherlands (all columns)""], ""rationale"": ""Netherlands has a brand value of 198.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Brand value (in million euros) (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Brand value (in million euros) |
+|---|---|
+| England | 8578 |
+| Spain | 3938 |
+| Germany | 3275 |
+| Italy | 1877 |
+| France | 1278 |
+| Netherlands | 198 |
+| Scotland | 110 |
+| Portugal | 114 |
+| Russia | 100 |",,,,,,,
+train-two_col_100892-4247,statista,pie,retrieval,How much percentage does the least indicate?,"{""answer"": 8.4, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Col=Share of companies (all rows)""], ""rationale"": ""The smallest share is Diversified at 8.4%, below 15.6, 22 and 54.""}","Source: Statista
+Chart type: pie
+Category axis: Product sector
+Series: Share of companies
+Slice colours: Fast-moving consumer goods = blue; Hardlines & leisure goods = dark blue; Apparel & Accessories = light grey; Diversified = red
+Table:
+| Product sector | Share of companies |
+|---|---|
+| Fast-moving consumer goods | 54% |
+| Hardlines & leisure goods | 22% |
+| Apparel & Accessories | 15.6% |
+| Diversified | 8.4% |",,,,,,,
+train-two_col_101216-4318,statista,v_bar,arithmetic_comparison,How many years have higher than 41 million euors?,"{""answer"": 2, ""answer_type"": ""number"", ""unit"": ""million euros"", ""evidence"": [""Col=Turnover in million euros (all rows)""], ""rationale"": ""Only 2019 (41.18) and 2018 (41.4) exceed 41, so 2 years.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Turnover in million euros (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Turnover in million euros |
+|---|---|
+| 2019 | 41.18 |
+| 2018 | 41.4 |
+| 2017 | 32.04 |
+| 2016 | 25.26 |
+| 2015 | 16.82 |
+| 2014 | 13.04 |
+| 2013 | 4.94 |
+| 2012 | 0.78 |",,,,,,,
+train-two_col_101344-4330,statista,line,retrieval,Which year has thehighest GDP?,"{""answer"": ""Q3 '19"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=GDP growth (all rows)""], ""rationale"": ""The highest value is 8.1% in Q3 '19.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: GDP growth (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | GDP growth |
+|---|---|
+| Q3 '20 | 4.5% |
+| Q2 '20 | 4% |
+| Q1 '20 | 5.7% |
+| Q4 '19 | 6.2% |
+| Q3 '19 | 8.1% |
+| Q2 '19 | 7.5% |
+| Q1 '19 | 6.3% |
+| Q4 '18 | 7.1% |
+| Q3 '18 | 7.2% |
+| Q2 '18 | 6% |
+| Q1 '18 | 7.5% |",,,,,,,
+train-two_col_102430-4373,statista,v_bar,arithmetic_comparison,What was the difference in Weekly and More rarely than weekly user or respondents?,"{""answer"": 6, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Weekly, Col=Share of respondents (9%)"", ""Row=More rarely than weekly, Col=Share of respondents (3%)""], ""rationale"": ""Weekly is 9 and More rarely than weekly is 3; 9 - 3 = 6.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Share of respondents (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Share of respondents |
+|---|---|
+| Daily or almost daily | 73% |
+| Weekly | 9% |
+| More rarely than weekly | 3% |",,,,,,,
+train-two_col_102452-4378,statista,v_bar,arithmetic_comparison,"How many are employed, has child?","{""answer"": 59, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Employed, have child, Col=Percentage of respondents (59%)""], ""rationale"": ""Employed, have child is 59%.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Percentage of respondents (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Percentage of respondents |
+|---|---|
+| Employed, have child | 59% |
+| Employed, no child | 47% |
+| Not employed, have child | 54% |
+| Not employed, no child | 33% |",,,,,,,
+train-two_col_2005-4573,statista,pie,arithmetic_comparison,What the sum of distribution production of corn of china and brazil country,"{""answer"": 32.49, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=China, Col=Production share (23.42%)"", ""Row=Brazil, Col=Production share (9.07%)""], ""rationale"": ""China 23.42 + Brazil 9.07 = 32.49.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Production share
+Slice colours: United States = blue; China = dark blue; Brazil = light grey; European Union = red; Argentina = green; Ukraine = yellow; India = purple; Mexico = purple; South Africa = light blue; Other = teal
+Table:
+| Characteristic | Production share |
+|---|---|
+| United States | 31.06% |
+| China | 23.42% |
+| Brazil | 9.07% |
+| European Union | 5.99% |
+| Argentina | 4.49% |
+| Ukraine | 3.22% |
+| India | 2.6% |
+| Mexico | 2.25% |
+| South Africa | 1.46% |
+| Other | 16.45% |",,,,,,,
+train-two_col_21052-4871,statista,pie,arithmetic_comparison,what is the distribution of sum of India and China?,"{""answer"": 72, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=India, Col=Distribution of production (1%)"", ""Row=China, Col=Distribution of production (71%)""], ""rationale"": ""India 1 + China 71 = 72.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Distribution of production
+Table:
+| Characteristic | Distribution of production |
+|---|---|
+| China | 71% |
+| Malaysia | 6% |
+| Korea | 6% |
+| United States | 3% |
+| Europe | 2% |
+| Japan | 1% |
+| Taiwan | 1% |
+| India | 1% |
+| Other | 9% |",,,,,,,
+train-two_col_21278-4872,statista,pie,visual_reference,Which age category has the highest death of corona virus?,"{""answer"": ""80 years or older"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Share of cases (all rows)""], ""rationale"": ""80 years or older has the largest share at 54.68%.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of cases
+Table:
+| Characteristic | Share of cases |
+|---|---|
+| 80 years or older | 54.68% |
+| 70-79 years | 28.44% |
+| 60-69 years | 11.95% |
+| 50-59 years | 3.64% |
+| 40-49 years | 0.75% |
+| 30-39 years | 0.4% |
+| 20-29 years | 0.15% |",,,,,,,
+train-two_col_2299-4544,statista,v_bar,visual_reference,Which month has the lowest number of registered Evernote users in billions?,"{""answer"": ""May '09"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Number of users in millions (all rows)""], ""rationale"": ""The smallest value is May '09 at 1 million users; every other month is higher.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Number of users in millions (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Number of users in millions |
+|---|---|
+| Jul '16 | 200 |
+| Jul '15 | 150 |
+| May '14 | 101 |
+| May '13 | 60 |
+| Feb '13 | 50 |
+| Jun '12 | 34 |
+| May '12 | 25 |
+| Nov '10 | 5 |
+| May '09 | 1 |",,,,,,,
+train-two_col_23185-4965,statista,pie,arithmetic_comparison,What is the difference in percentage share of region with highest and lowest Puma share?,"{""answer"": 9.7, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=EMEA, Col=Share of sales (37.9%)"", ""Row=Asia/Pacific, Col=Share of sales (28.2%)""], ""rationale"": ""Highest is EMEA at 37.9% and lowest Asia/Pacific at 28.2%; 37.9 - 28.2 = 9.7.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of sales
+Slice colours: EMEA = blue; Americas = dark blue; Asia/Pacific = light grey
+Table:
+| Characteristic | Share of sales |
+|---|---|
+| EMEA | 37.9% |
+| Americas | 33.9% |
+| Asia/Pacific | 28.2% |",,,,,,,
+train-two_col_241-3601,statista,h_bar,arithmetic_comparison,Wha's the total net sales of British American Tobacco and Phillip Morris International?,"{""answer"": 61.8, ""answer_type"": ""number"", ""unit"": ""billion U.S. dollars"", ""evidence"": [""Row=British American Tobacco, Col=Net sales in billion U.S. dollars (33.1)"", ""Row=Philip Morris International, Col=Net sales in billion U.S. dollars (28.7)""], ""rationale"": ""British American Tobacco 33.1 plus Philip Morris International 28.7 equals 61.8.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Characteristic
+Series: Net sales in billion U.S. dollars (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Net sales in billion U.S. dollars |
+|---|---|
+| British American Tobacco | 33.1 |
+| Philip Morris International | 28.7 |
+| Imperial Brands | 21.2 |
+| Altria Group | 20.8 |
+| Japan Tobacco | 19.6 |
+| Gudang Garam | 7.9 |
+| ITC | 6.3 |
+| KT&G | 4.5 |",,,,,,,
+train-two_col_24197-5040,statista,v_bar,retrieval,What is the unemployment rate among the people within age group of 15-19 years?,"{""answer"": 37.4, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=15-19 years, Col=Unemployment rate (37.4%)""], ""rationale"": ""The 15-19 years group has an unemployment rate of 37.4%.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Unemployment rate (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Unemployment rate |
+|---|---|
+| 65-74 years | 2% |
+| 55-64 years | 5.8% |
+| 45-54 years | 5.2% |
+| 35-44 years | 6.4% |
+| 25-34 years | 8.6% |
+| 20-24 years | 17.6% |
+| 15-19 years | 37.4% |",,,,,,,
+train-two_col_24257-5071,statista,v_bar,retrieval,Is the share of revenue of Earrings more then Rings?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Earrings, Col=Share of revenue (7%)"", ""Row=Rings, Col=Share of revenue (15%)""], ""rationale"": ""Earrings are 7% and Rings 15%; 7 is less than 15, so no.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Share of revenue (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Share of revenue |
+|---|---|
+| Charms | 51% |
+| Bracelets | 20% |
+| Rings | 15% |
+| Necklaces & Pendants | 8% |
+| Earrings | 7% |",,,,,,,
+train-two_col_24264-5145,statista,v_bar,visual_reference,Which year experienced the biggest drop in Growth rate of capital investment?,"{""answer"": 2013, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Col=Growth rate (all rows)"", ""Row=2012, Col=Growth rate (16.4%)"", ""Row=2013, Col=Growth rate (-0.9%)""], ""rationale"": ""From 16.4% in 2012 to -0.9% in 2013 is a 17.3-point drop, larger than any other year-to-year fall.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Growth rate (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Growth rate |
+|---|---|
+| 2012 | 16.4% |
+| 2013 | -0.9% |
+| 2014 | 13.7% |
+| 2015 | 2.9% |
+| 2016 | 7.3% |
+| 2017 | 2.3% |
+| 2018* | 4.3% |
+| 2028** | 2.1% |",,,,,,,
+train-two_col_24279-5068,statista,v_bar,retrieval,What is the value of 2019 ?,"{""answer"": 26, ""answer_type"": ""number"", ""unit"": ""billion euros"", ""evidence"": [""Row=2019, Col=Market value in billion euros (26)""], ""rationale"": ""The 2019 bar shows 26 billion euros.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Year
+Series: Market value in billion euros (colour: blue; single series, all bars share this colour)
+Table:
+| Year | Market value in billion euros |
+|---|---|
+| 2020 | 28 |
+| 2019 | 26 |
+| 2018 | 22 |
+| 2015 | 17 |",,,,,,,
+train-two_col_24505-5115,statista,h_bar,arithmetic_comparison,What is the sum of the first three small bars ?,"{""answer"": 29, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Tire dealers, Col=Market share (7%)"", ""Row=Body, paint and interior repair/ maintenance, Col=Market share (11%)"", ""Row=Automotive parts & accessories stores, Col=Market share (11%)""], ""rationale"": ""The three smallest bars are 7%, 11% and 11%; 7 + 11 + 11 = 29.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Characteristic
+Series: Market share (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Market share |
+|---|---|
+| OEM - new car dealers | 27% |
+| General automotive repair shops | 16% |
+| Body, paint and interior repair/ maintenance | 11% |
+| Automotive parts & accessories stores | 11% |
+| Tire dealers | 7% |
+| Others | 28% |",,,,,,,
+train-two_col_24578-5090,statista,h_bar,retrieval,What's the no.1 therapeutic area?,"{""answer"": ""Oncologics"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Sales in billion U.S. dollars (all rows)""], ""rationale"": ""Oncologics has the highest sales at 52.37 billion dollars.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Therapeutic areas
+Series: Sales in billion U.S. dollars (colour: blue; single series, all bars share this colour)
+Table:
+| Therapeutic areas | Sales in billion U.S. dollars |
+|---|---|
+| Oncologics | 52.37 |
+| Lipid Regulators | 35.28 |
+| Respiratory Agents | 33.6 |
+| Antidiabetics | 30.41 |
+| Anti-ulcerants | 29.61 |
+| Antiotensin II Antagonists | 25.21 |
+| Antipsychotics | 23.25 |
+| Antidepressants | 19.42 |
+| AutoImmune agents | 17.96 |
+| Platelet Aggr. Inhibitors | 14.6 |",,,,,,,
+train-two_col_3184-4678,statista,line,retrieval,What is the poverty rate of Georgia in 2019?,"{""answer"": 13.3, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=2019, Col=Percentage of population (13.3%)""], ""rationale"": ""The 2019 value is 13.3%.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Percentage of population (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Percentage of population |
+|---|---|
+| 2019 | 13.3% |
+| 2018 | 14.3% |
+| 2017 | 14.9% |
+| 2016 | 16% |
+| 2015 | 17% |
+| 2014 | 18.3% |
+| 2013 | 19% |
+| 2012 | 19.2% |
+| 2011 | 19.1% |
+| 2010 | 17.9% |
+| 2009 | 16.5% |
+| 2008 | 14.7% |
+| 2007 | 14.3% |
+| 2006 | 14.7% |
+| 2005 | 14.4% |
+| 2004 | 14.8% |
+| 2003 | 13.4% |
+| 2002 | 12.7% |
+| 2001 | 11.7% |
+| 2000 | 12.6% |",,,,,,,
+train-two_col_3318-4641,statista,v_bar,arithmetic_comparison,What is the total smartwatch sale in 2 years when it was lowest and highest?,"{""answer"": 31.6, ""answer_type"": ""number"", ""unit"": ""million units"", ""evidence"": [""Row=2020**, Col=Sales in million units (22.6)"", ""Row=2016, Col=Sales in million units (9.0)""], ""rationale"": ""Highest is 2020 at 22.6 and lowest 2016 at 9.0; 22.6 + 9.0 = 31.6.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Sales in million units (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Sales in million units |
+|---|---|
+| 2020** | 22.6 |
+| 2019* | 20.1 |
+| 2018 | 18.8 |
+| 2017 | 12.1 |
+| 2016 | 9.0 |",,,,,,,
+train-two_col_3371-4735,statista,v_bar,arithmetic_comparison,What is the average revenue of Jimmy Choo worldwide from 2018 to 2019?,"{""answer"": 406.3, ""answer_type"": ""number"", ""unit"": ""million U.S. dollars"", ""evidence"": [""Row=2018, Col=Revenue in million U.S. dollars (222.6)"", ""Row=2019, Col=Revenue in million U.S. dollars (590.0)""], ""rationale"": ""(222.6 + 590.0) / 2 = 406.3.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Revenue in million U.S. dollars (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Revenue in million U.S. dollars |
+|---|---|
+| 2020 | 555.0 |
+| 2019 | 590.0 |
+| 2018 | 222.6 |",,,,,,,
+train-two_col_3377-4690,statista,v_bar,arithmetic_comparison,What is the average number of employees of the Abercrombie & Fitch Co. worldwide in 2021?,"{""answer"": 34000, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2021, Col=Average number of employees (34000)""], ""rationale"": ""The 2021 bar shows 34000 employees.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Average number of employees (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Average number of employees |
+|---|---|
+| 2021 | 34000 |
+| 2020 | 44000 |
+| 2019 | 42000 |
+| 2018 | 38000 |
+| 2017 | 43000 |
+| 2016 | 49000 |
+| 2015 | 65000 |
+| 2014 | 75000 |
+| 2013 | 98000 |",,,,,,,
+train-two_col_3804-4685,statista,v_bar,arithmetic_comparison,What is the average value of wood and wood product imported into India from FY 2016 to FY 2017?,"{""answer"": 329.3, ""answer_type"": ""number"", ""unit"": ""billion Indian rupees"", ""evidence"": [""Row=FY 2016, Col=Import value in billion Indian rupees (330.4)"", ""Row=FY 2017, Col=Import value in billion Indian rupees (328.2)""], ""rationale"": ""(330.4 + 328.2) / 2 = 329.3.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Import value in billion Indian rupees (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Import value in billion Indian rupees |
+|---|---|
+| FY 2020 | 396.99 |
+| FY 2019 | 428.41 |
+| FY 2018 | 388.5 |
+| FY 2017 | 328.2 |
+| FY 2016 | 330.4 |
+| FY 2015 | 334.13 |
+| FY 2014 | 309.81 |
+| FY 2013 | 276.57 |
+| FY 2012 | 240.78 |
+| FY 2011 | 168.95 |",,,,,,,
+train-two_col_3838-4731,statista,v_bar,arithmetic_comparison,How many users will Facebook gain in Saudi Arabia from 2020 to 2021?,"{""answer"": 0.71, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=2021*, Col=Number of users in millions (15.82)"", ""Row=2020*, Col=Number of users in millions (15.11)""], ""rationale"": ""15.82 in 2021 minus 15.11 in 2020 equals 0.71 million.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Number of users in millions (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Number of users in millions |
+|---|---|
+| 2025* | 17.95 |
+| 2024* | 17.5 |
+| 2023* | 17.0 |
+| 2022* | 16.45 |
+| 2021* | 15.82 |
+| 2020* | 15.11 |
+| 2019 | 14.0 |
+| 2018 | 13.44 |
+| 2017 | 11.84 |",,,,,,,
+train-two_col_40202-5084,statista,pie,visual_reference,What color is Asain Pacific sales?,"{""answer"": ""light grey"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Colour: Asia Pacific*** = light grey""], ""rationale"": ""Asia Pacific is mapped to light grey.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Retail sales share
+Slice colours: North America* = blue; Europe** = dark blue; Asia Pacific*** = light grey; Latin America**** = red
+Table:
+| Characteristic | Retail sales share |
+|---|---|
+| North America* | 56% |
+| Europe** | 27% |
+| Asia Pacific*** | 15% |
+| Latin America**** | 2% |",,,,,,,
+train-two_col_41522-5197,statista,pie,arithmetic_comparison,Is the average of retail sales from Switzerland and Benelux greater than the retail sales of Germany ?,"{""answer"": ""No"", ""answer_type"": ""yes_no"", ""unit"": null, ""evidence"": [""Row=Switzerland, Col=Share of retail sales (9.3%)"", ""Row=Benelux, Col=Share of retail sales (14.4%)"", ""Row=Germany, Col=Share of retail sales (44.2%)""], ""rationale"": ""Average of Switzerland and Benelux is (9.3 + 14.4) / 2 = 11.85, which is less than Germany's 44.2, so no.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of retail sales
+Table:
+| Characteristic | Share of retail sales |
+|---|---|
+| Germany | 44.2% |
+| Benelux | 14.4% |
+| Switzerland | 9.3% |
+| China | 7.2% |
+| Austria | 6.2% |
+| Singapore | 3.7% |
+| Malaysia | 2.8% |
+| France | 2.8% |
+| Taiwan | 2.4% |
+| Hong Kong | 2% |
+| Sweden | 1.2% |
+| Macau | 1.1% |
+| Poland | 1.1% |
+| Finland | 0.9% |
+| Australia and New Zealand | 0.7% |
+| Denmark | 0% |",,,,,,,
+train-two_col_43000-5291,statista,v_bar,arithmetic_comparison,Which gender gap index deviates from the overall score the most?,"{""answer"": ""Political empowerment"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Index score (all rows)"", ""Row=Overall score, Col=Index score (0.76)"", ""Row=Political empowerment, Col=Index score (0.47)""], ""rationale"": ""Deviations from 0.76: Political 0.29, Economic 0.17, Health 0.22, Educational 0.24. Political empowerment deviates most.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Index score
+Bar colours: Political empowerment = blue; Economic participation = blue; Health & survival = blue; Educational attainment = blue; Overall score = light grey
+Table:
+| Characteristic | Index score |
+|---|---|
+| Political empowerment | 0.47 |
+| Economic participation & opportunity | 0.59 |
+| Health & survival | 0.98 |
+| Educational attainment | 1.0 |
+| Overall score | 0.76 |",,,,,,,
+train-two_col_4980-4768,statista,line,retrieval,What is the minimum Producer Price Index (PPI) for commodities in the United States?,"{""answer"": 189.4, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Producer Price Index (100=1982) (all rows)""], ""rationale"": ""The lowest PPI value is 189.4, in May '20.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Producer Price Index (100=1982) (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Producer Price Index (100=1982) |
+|---|---|
+| May '21 | 224.4 |
+| Apr '21 | 217.5 |
+| Mar '21 | 216.3 |
+| Feb '21 | 208.5 |
+| Jan '21 | 204.3 |
+| Dec '20 | 200.5 |
+| Nov '20 | 198.3 |
+| Oct '20 | 196.5 |
+| Sep '20 | 195.4 |
+| Aug '20 | 194.0 |
+| Jul '20 | 193.0 |
+| Jun '20 | 191.2 |
+| May '20 | 189.4 |",,,,,,,
+train-two_col_5157-4774,statista,line,retrieval,What is the poverty rate in Ohio in the year 2018,"{""answer"": 13.9, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=2018, Col=Percentage of population (13.9%)""], ""rationale"": ""The 2018 point shows a poverty rate of 13.9%.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Percentage of population (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Percentage of population |
+|---|---|
+| 2019 | 13.1% |
+| 2018 | 13.9% |
+| 2017 | 14% |
+| 2016 | 14.6% |
+| 2015 | 14.8% |
+| 2014 | 15.8% |
+| 2013 | 16% |
+| 2012 | 16.3% |
+| 2011 | 16.4% |
+| 2010 | 15.8% |
+| 2009 | 15.2% |
+| 2008 | 13.4% |
+| 2007 | 13.1% |
+| 2006 | 13.3% |
+| 2005 | 13% |
+| 2004 | 12.5% |
+| 2003 | 12.1% |
+| 2002 | 11.9% |
+| 2001 | 11% |
+| 2000 | 11.1% |",,,,,,,
+train-two_col_5902-4916,statista,v_bar,visual_reference,What is the lowest value in blue bar ??,"{""answer"": 1.2, ""answer_type"": ""number"", ""unit"": ""billion U.S. dollars"", ""evidence"": [""Colour: Market value in billion U.S. dollars = blue"", ""Col=Market value in billion U.S. dollars (all rows)""], ""rationale"": ""All bars are blue; the lowest is 2011 at 1.2.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Market value in billion U.S. dollars (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Market value in billion U.S. dollars |
+|---|---|
+| 2016 | 4.7 |
+| 2015 | 3.7 |
+| 2014 | 2.9 |
+| 2013 | 2.3 |
+| 2012 | 1.7 |
+| 2011 | 1.2 |",,,,,,,
+train-two_col_60296-5348,statista,pie,arithmetic_comparison,How many countries does the graph represent?,"{""answer"": 6, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Col=Distribution of people (all rows)""], ""rationale"": ""The chart has 6 slices (regions).""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Distribution of people
+Slice colours: South-East Asia region = green; Western Pacific region = yellow; African region = blue; Eastern Mediterranean region = dark blue; European region = light grey; Region of the Americas = red
+Table:
+| Characteristic | Distribution of people |
+|---|---|
+| African region | 10% |
+| Eastern Mediterranean region | 12% |
+| European region | 14% |
+| Region of the Americas | 21% |
+| South-East Asia region | 23% |
+| Western Pacific region | 20% |",,,,,,,
+train-two_col_61172-3650,statista,line,retrieval,What is the price shows in Mar 21?,"{""answer"": 28.33, ""answer_type"": ""number"", ""unit"": ""U.S. dollars"", ""evidence"": [""Row=Mar 21, Col=Price in U.S. dollars per pound (28.33)""], ""rationale"": ""The Mar 21 point shows a price of 28.33.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Price in U.S. dollars per pound (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Price in U.S. dollars per pound |
+|---|---|
+| May 21 | 30.26 |
+| Apr 21 | 29.75 |
+| Mar 21 | 28.33 |
+| Feb 21 | 28.66 |
+| Jan 21 | 29.86 |
+| Dec 20 | 29.77 |
+| Nov 20 | 29.49 |
+| Oct 20 | 29.64 |
+| Sep 20 | 29.98 |
+| Aug 20 | 31.38 |
+| Jul 20 | 32.36 |
+| Jun 20 | 33.09 |
+| May 20 | 33.51 |",,,,,,,
+train-two_col_61172-3651,statista,line,arithmetic_comparison,How many points it moved from Mar 21 to May 21?,"{""answer"": 1.93, ""answer_type"": ""number"", ""unit"": ""U.S. dollars"", ""evidence"": [""Row=Mar 21, Col=Price in U.S. dollars per pound (28.33)"", ""Row=May 21, Col=Price in U.S. dollars per pound (30.26)""], ""rationale"": ""From 28.33 in Mar 21 to 30.26 in May 21; 30.26 - 28.33 = 1.93.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Price in U.S. dollars per pound (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Price in U.S. dollars per pound |
+|---|---|
+| May 21 | 30.26 |
+| Apr 21 | 29.75 |
+| Mar 21 | 28.33 |
+| Feb 21 | 28.66 |
+| Jan 21 | 29.86 |
+| Dec 20 | 29.77 |
+| Nov 20 | 29.49 |
+| Oct 20 | 29.64 |
+| Sep 20 | 29.98 |
+| Aug 20 | 31.38 |
+| Jul 20 | 32.36 |
+| Jun 20 | 33.09 |
+| May 20 | 33.51 |",,,,,,,
+train-two_col_62333-3714,statista,v_bar,visual_reference,Which age group donated the highest dollars?,"{""answer"": ""65 years and over"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Average donation in Canadian dollars (all rows)""], ""rationale"": ""65 years and over has the highest average donation at 2840.""}","Source: Statista
+Chart type: vertical bar
+Category axis: Characteristic
+Series: Average donation in Canadian dollars (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Average donation in Canadian dollars |
+|---|---|
+| 0 to 24 years | 390 |
+| 25 to 34 years | 910 |
+| 35 to 44 years | 1390 |
+| 45 to 54 years | 1820 |
+| 55 to 64 years | 2130 |
+| 65 years and over | 2840 |",,,,,,,
+train-two_col_62810-3741,statista,pie,arithmetic_comparison,What's the median value of all the segments in the pie chart?,"{""answer"": 17, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Col=Share of sales (all rows)""], ""rationale"": ""Sorted values are 16, 17, 67; the middle value is 17.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of sales
+Slice colours: Women = blue; Men = dark blue; Lifestyle and others* = light grey
+Table:
+| Characteristic | Share of sales |
+|---|---|
+| Women | 67% |
+| Men | 16% |
+| Lifestyle and others* | 17% |",,,,,,,
+train-two_col_63572-3818,statista,line,retrieval,What is the wholesale price index of electrical equipment in finical year 2015?,"{""answer"": 109.2, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=FY 2015, Col=Wholesale Price Index (109.2)""], ""rationale"": ""FY 2015 has an index of 109.2.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Wholesale Price Index (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Wholesale Price Index |
+|---|---|
+| FY 2020 | 112.0 |
+| FY 2019 | 111.6 |
+| FY 2018 | 111.2 |
+| FY 2017 | 109.2 |
+| FY 2016 | 108.2 |
+| FY 2015 | 109.2 |
+| FY 2014 | 108.9 |
+| FY 2013 | 103.9 |",,,,,,,
+train-two_col_80186-3776,statista,line,visual_reference,Which year has the downward peak?,"{""answer"": 2009, ""answer_type"": ""number"", ""unit"": ""million euros"", ""evidence"": [""Col=Annual turnover in million euros (all rows)""], ""rationale"": ""The lowest turnover is 7447.4 in 2009, below every other year.""}","Source: Statista
+Chart type: line
+Category axis: Characteristic
+Series: Annual turnover in million euros (colour: blue; single series, all points share this colour)
+Table:
+| Characteristic | Annual turnover in million euros |
+|---|---|
+| 2018* | 12661.9 |
+| 2017 | 12187.2 |
+| 2016 | 11252.9 |
+| 2015 | 10919.6 |
+| 2014 | 10241.2 |
+| 2013 | 9946.8 |
+| 2012 | 10121.7 |
+| 2011 | 9981.5 |
+| 2010 | 8851.6 |
+| 2009 | 7447.4 |
+| 2008* | 9539.9 |",,,,,,,
+train-two_col_80884-3787,statista,pie,arithmetic_comparison,What is the sum total of transportation and Tobacco as part of the Eastman Chemical Company's revenue as of 2020?,"{""answer"": 27, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Transportation, Col=Share of revenue (18%)"", ""Row=Tobacco, Col=Share of revenue (9%)""], ""rationale"": ""Transportation 18% + Tobacco 9% = 27%.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of revenue
+Table:
+| Characteristic | Share of revenue |
+|---|---|
+| Transportation | 18% |
+| Consumables | 17% |
+| Building & construction | 13% |
+| Industrial chemicals & processing | 11% |
+| Tobacco | 9% |
+| Consumer/medical durables | 8% |
+| Personal care/health & wellness | 7% |
+| Food, feed, & agriculture | 7% |
+| Energy, fuels, and water | 5% |
+| Electronics | 3% |
+| Other | 2% |",,,,,,,
+train-two_col_82950-4009,statista,pie,arithmetic_comparison,What is the sum of industrial services and landfill together?,"{""answer"": 18, ""answer_type"": ""number"", ""unit"": ""%"", ""evidence"": [""Row=Industrial services, Col=Share of revenue (9%)"", ""Row=Landfill, Col=Share of revenue (9%)""], ""rationale"": ""Industrial services 9% + Landfill 9% = 18%.""}","Source: Statista
+Chart type: pie
+Category axis: Characteristic
+Series: Share of revenue
+Table:
+| Characteristic | Share of revenue |
+|---|---|
+| Hazardous and liquid waste | 24% |
+| Commercial and industrial collection | 18% |
+| Sorting, recycling, and MBT | 16% |
+| Municipal collection and street cleaning | 13% |
+| Energy recovery (incineration) | 11% |
+| Industrial services | 9% |
+| Landfill | 9% |",,,,,,,
+train-two_col_83574-4288,statista,h_bar,arithmetic_comparison,Which country has the highest total imports?,"{""answer"": ""United States"", ""answer_type"": ""text"", ""unit"": null, ""evidence"": [""Col=Share in total import (all rows)""], ""rationale"": ""United States has the highest share at 15%.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Characteristic
+Series: Share in total import (colour: blue; single series, all bars share this colour)
+Table:
+| Characteristic | Share in total import |
+|---|---|
+| United States | 15% |
+| France | 13% |
+| United Kingdom | 9% |
+| China | 9% |
+| Germany | 5% |
+| Italy | 5% |",,,,,,,
+train-two_col_91-7349,statista,h_bar,arithmetic_comparison,What's the difference between the most and least popular YouTube videos number of views?,"{""answer"": 4.27, ""answer_type"": ""number"", ""unit"": null, ""evidence"": [""Row=\""Baby Shark Dance\"" - Pinkfong Kids' Songs & Stories, Col=Number of views in billions (7.91)"", ""Row=\""Bath Song\"" - Cocomelon - Nursery Rhymes, Col=Number of views in billions (3.64)""], ""rationale"": ""Most viewed 7.91 minus least viewed 3.64 = 4.27.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Characteristic
+Series: Number of views in billions
+Table:
+| Characteristic | Number of views in billions |
+|---|---|
+| ""Baby Shark Dance"" - Pinkfong Kids' Songs & Stories | 7.91 |
+| ""Despacito""- Luis Fonsi featuring Daddy Yankee | 7.2 |
+| ""Shape of You"" - Ed Sheeran | 5.18 |
+| ""See You Again"" - Wiz Khalifa featuring Charlie Puth | 4.96 |
+| ""Johny Johny Yes Papa"" - LooLoo Kids | 4.77 |
+| ""Masha and the Bear – Recipe for Disaster"" - Get Movies | 4.41 |
+| ""Uptown Funk"" - Mark Ronson featuring Bruno Mars | 4.09 |
+| ""Gangnam Style"" - Psy | 3.97 |
+| ""Learning Colors - Colorful Eggs on a Farm"" - Miroshka TV | 3.69 |
+| ""Bath Song"" - Cocomelon - Nursery Rhymes | 3.64 |",,,,,,,
+train-two_col_95-3627,statista,h_bar,arithmetic_comparison,What is the difference between the highest numbers in revenue and the lowest?,"{""answer"": 2836037, ""answer_type"": ""number"", ""unit"": ""U.S. dollars"", ""evidence"": [""Row=Roblox, Col=Daily revenue in U.S. dollars (3093504)"", ""Row=Gardenscapes, Col=Daily revenue in U.S. dollars (257467)""], ""rationale"": ""3093504 - 257467 = 2836037.""}","Source: Statista
+Chart type: horizontal bar
+Category axis: Characteristic
+Series: Daily revenue in U.S. dollars
+Table:
+| Characteristic | Daily revenue in U.S. dollars |
+|---|---|
+| Roblox | 3093504 |
+| Candy Crush Saga | 2026652 |
+| Coin Master | 1095882 |
+| State of Survival: Zombie War | 940076 |
+| Homescapes | 776355 |
+| PUBG MOBILE 3RD ANNIVERSARY | 477918 |
+| Pokémon GO | 463580 |
+| Clash of Clans | 456715 |
+| Project Makeover | 399406 |
+| Gardenscapes | 257467 |",,,,,,,

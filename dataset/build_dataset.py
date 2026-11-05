@@ -39,7 +39,7 @@ UNANSWERABLE_RATE = 0.05
 STRATA = ("source", "chart_type", "answer_type", "question_type")
 
 SYSTEM_PROMPT = (
-    "You are a financial reporting analyst. Answer questions about the chart data provided.\n"
+    "You are a chart analyst. Answer questions about the chart data provided.\n"
     "Return ONLY valid JSON matching the schema. If the data cannot answer the question,\n"
     'set "answer" to null and explain in "rationale".'
 )
@@ -349,7 +349,35 @@ def load_annotation(path, header, body):
             else:
                 series.append((label, c))
     return {"chart_type": ctype, "title": title, "y_label": y_label or None,
-            "series": series, "marks": marks, "n_models": len(models)}
+            "series": series, "marks": marks, "n_models": len(models),
+            "mark_colours_unreliable": mark_colours_unreliable(ctype, models, marks, header, body)}
+
+
+def mark_colours_unreliable(ctype, models, marks, header, body):
+    """True when the per-bar / per-slice colour list can't be trusted. Found after v1.0 was sampled
+    (so it only feeds the --pool-out dump and add_teacher_labels.py, leaving the sample unchanged):
+      * pies whose annotation repeats a slice label or has a different number of slices than the table;
+      * bar charts whose annotation x labels are not in the same order as the y values (about half of
+        the OECD bar charts): the colours follow the y values, so pairing them with x mislabels bars."""
+    if not marks:
+        return False
+    rows = [clean(r[0]) for r in body]
+    if ctype == "pie":
+        labels = [m for _, m, _ in marks]
+        return len(labels) != len(set(labels)) or len(labels) != len(rows)
+    lookup = {clean(r[0]).lower(): r for r in body}
+    for m in models:
+        cs = m.get("colors")
+        if not isinstance(cs, list) or len({str(x).lower() for x in cs}) <= 1:
+            continue
+        for x, y in zip(m.get("x") or [], m.get("y") or []):
+            r = lookup.get(best_label(str(x), rows).lower())
+            yv = to_number(y)
+            if r is None or yv is None:
+                continue
+            if not any(to_number(v) is not None and abs(to_number(v) - yv) < 1e-6 for v in r[1:]):
+                return True
+    return False
 
 
 def chart_colours(ann):
@@ -653,6 +681,8 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--domain-filter", choices=["off", "prefer", "strict"], default="prefer",
                     help="strict: keep only domain-matching items; prefer: fill from domain items first")
+    ap.add_argument("--pool-out", help="also write every split's answerable pool (items + chart inputs) to this "
+                    "JSON file; add_teacher_labels.py draws replacements from it")
     args = ap.parse_args()
     rng = random.Random(args.seed)
     os.makedirs(args.out, exist_ok=True)
@@ -746,6 +776,16 @@ def main():
             "colour_questions_seen": colour_qs["seen"],
             "colour_questions_kept_in_pool": colour_qs["kept"],
         }
+
+    if args.pool_out:
+        dump = {split: {"items": pool, "charts": {k: {"header": v[0], "text": v[3],
+                                                       "chart_type": (v[2] or {}).get("chart_type") or "unknown",
+                                                       "mark_colours_unreliable": bool((v[2] or {}).get(
+                                                           "mark_colours_unreliable"))}
+                                                   for k, v in charts.items()}}
+                for split, (pool, charts) in pools.items()}
+        with open(args.pool_out, "w", encoding="utf-8") as f:
+            json.dump(dump, f, ensure_ascii=False)
 
     for split, n_total in SPLITS.items():
         pool, charts = pools[split]
